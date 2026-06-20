@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get details on BrewCraft's custom installation service. Professional calibration of glycol cooling lines and sanitary weld checks.">
+  <title>Service Details - Microbrewery Equipment & Homebrewing Supplies</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link id="bootstrapCSS" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link id="darkThemeCSS" rel="stylesheet" href="assets/css/dark-mode.css">
+  <link id="rtlCSS" rel="stylesheet" href="assets/css/rtl.css" disabled>
+</head>
+<body>
+
+  <!-- Header (Navbar) -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-custom py-3" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: var(--primary-color);">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+          </svg>
+          <span class="fs-4 fw-bold" style="color: var(--secondary-color);">BrewCraft</span>
+        </a>
+
+        <!-- Hamburger toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas navigation -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: var(--secondary-color);">BrewCraft</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-2">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0 flex-nowrap">
+              <button id="themeToggle" class="toggle-btn" aria-label="Toggle Dark Mode">
+                <i class="bi bi-moon-fill" aria-hidden="true"></i>
+              </button>
+              <button id="rtlToggle" class="toggle-btn" aria-label="Toggle Right to Left Layout">
+                <span>RTL</span>
+              </button>
+              <a href="login.html" class="btn-custom btn-custom-secondary px-3 py-2 fs-6">
+                <i class="bi bi-person-fill"></i> Login
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Inner Hero -->
+    <section class="inner-hero py-5 text-center bg-secondary" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));" aria-labelledby="service-detail-title">
+      <div class="container py-4">
+        <h1 id="service-detail-title" class="text-white mb-3">Custom Setup & Installation</h1>
+        <p class="lead text-light max-width-md mx-auto">Get your kettles, pumps, and temperature controls integrated seamlessly by professional welding and electrical technicians.</p>
+      </div>
+    </section>
+
+    <!-- Content & Form (Section 1) -->
+    <section class="py-5" aria-labelledby="overview-heading">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Text Details -->
+          <div class="col-lg-8">
+            <h2 id="overview-heading" class="mb-4">Standardized Sanitary Installations</h2>
+            <p>Any minor scratch or microscopic leak in a weld can collect bacteria, leading to ruined batches and sour beers. That is why our installation service uses premium TIG welding techniques under argon gas shields, ensuring perfectly smooth inner walls in every pipe connection.</p>
+            
+            <h3 class="fs-4 mt-5 mb-3">What the Installation Includes:</h3>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-5">
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-patch-check-fill text-primary mt-1"></i>
+                <span><strong>Manifold Mountings:</strong> Perfect routing of mashing, filtration, boiling, and whirlpool fluid paths.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-patch-check-fill text-primary mt-1"></i>
+                <span><strong>Glycol Chiller Integration:</strong> Seamless distribution to all jacketed fermenters with manual and solenoid control overrides.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-patch-check-fill text-primary mt-1"></i>
+                <span><strong>Hydrostatic Pressure Testing:</strong> Every line is pressure checked for 24 hours to guarantee zero liquid leakage under operation.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-patch-check-fill text-primary mt-1"></i>
+                <span><strong>Control Panel Calibration:</strong> Tuning PID algorithms to prevent temperature overshoot during wort heating and boiling.</span>
+              </li>
+            </ul>
+
+            <h3 class="fs-4 mb-3">Technical Specifications Table</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered border-secondary-subtle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Specification</th>
+                    <th scope="col">Hobby / Microscale (5-30 Gal)</th>
+                    <th scope="col">Commercial (1-15 BBL)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Material Standard</td>
+                    <td>SUS 304 Polished Stainless</td>
+                    <td>SUS 304 / SUS 316 Acid-Resistant</td>
+                  </tr>
+                  <tr>
+                    <td>Piping Joints</td>
+                    <td>Tri-Clamp Sanitary (1.5" - 2")</td>
+                    <td>Tri-Clamp / DIN Sanitary (2" - 3")</td>
+                  </tr>
+                  <tr>
+                    <td>Installation Time</td>
+                    <td>1 - 2 Days</td>
+                    <td>5 - 10 Days (including piping runs)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Contact Callback Form -->
+          <div class="col-lg-4">
+            <div class="card-custom bg-light-subtle p-4">
+              <h3 class="fs-4 mb-3">Request Installation Callback</h3>
+              <p class="small text-muted mb-4">Leave your details and our hardware lead will coordinate a technical callback.</p>
+              
+              <form class="needs-validation w-100 text-start" novalidate>
+                <div class="mb-3 position-relative">
+                  <label for="installationName" class="form-label small fw-bold">Company / Name</label>
+                  <input type="text" class="form-control" id="installationName" required>
+                  <div class="invalid-tooltip-custom">Please enter your name.</div>
+                </div>
+                
+                <div class="mb-3 position-relative">
+                  <label for="installationEmail" class="form-label small fw-bold">Email Address</label>
+                  <input type="email" class="form-control" id="installationEmail" required>
+                  <div class="invalid-tooltip-custom">Please enter a valid email.</div>
+                </div>
+
+                <div class="mb-3 position-relative">
+                  <label for="breweryScale" class="form-label small fw-bold">Brewery Scale</label>
+                  <select class="form-select" id="breweryScale" required>
+                    <option value="" disabled selected>Select scale...</option>
+                    <option value="hobby">Hobby Setup (under 30 gal)</option>
+                    <option value="pilot">Pilot System (1-2 BBL)</option>
+                    <option value="commercial">Commercial Brewhouse (3+ BBL)</option>
+                  </select>
+                  <div class="invalid-tooltip-custom">Please select your system scale.</div>
+                </div>
+
+                <button type="submit" class="btn-custom btn-custom-primary w-100 mt-3">Submit Request</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3" aria-label="Footer Navigation">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 text-center text-lg-start">
+          <a class="d-inline-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.html">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: var(--primary-color);">
+              <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+            </svg>
+            <span class="fs-4 fw-bold text-white">BrewCraft</span>
+          </a>
+          <p class="text-light-emphasis">Empowering craft breweries and homebrew enthusiasts with superior ingredients and industry-standard brewing machinery.</p>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
+            <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-light-emphasis text-decoration-none">Home Standard</a></li>
+            <li><a href="home-2.html" class="text-light-emphasis text-decoration-none">Home Premium</a></li>
+            <li><a href="about.html" class="text-light-emphasis text-decoration-none">Our Story</a></li>
+            <li><a href="services.html" class="text-light-emphasis text-decoration-none">Brewing Solutions</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+          <h5 class="text-white mb-3">Resources</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="blog.html" class="text-light-emphasis text-decoration-none">Community Blog</a></li>
+            <li><a href="gallery.html" class="text-light-emphasis text-decoration-none">Equipment Gallery</a></li>
+            
+            <li><a href="contact.html" class="text-light-emphasis text-decoration-none">Get In Touch</a></li>
+            <li><a href="coming-soon.html" class="text-light-emphasis text-decoration-none">Upcoming Gear</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary">
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 text-light-emphasis text-center text-md-start">&copy; 2026 BrewCraft Inc. All rights reserved.</p>
+        <div class="d-flex gap-4">
+          <a href="#" class="text-light-emphasis text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-light-emphasis text-decoration-none">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="show-on-scroll" aria-label="Back to Top">
+    <i class="bi bi-chevron-up fs-4"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

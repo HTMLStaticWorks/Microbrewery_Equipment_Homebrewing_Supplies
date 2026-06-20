@@ -1,0 +1,38 @@
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  text-align: right;
+}
+
+[dir="rtl"] .me-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .ms-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+/* Back to top button position in RTL */
+[dir="rtl"] #backToTop {
+  right: auto;
+  left: 2rem;
+}
+
+/* Nav Link indicators in RTL */
+[dir="rtl"] .nav-link.active::after {
+  left: auto;
+  right: 10%;
+}

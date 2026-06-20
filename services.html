@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our microbrewery setup services, recipe consultations, grain scaling, and automatic control system planning.">
+  <title>Services - Microbrewery Equipment & Homebrewing Supplies</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link id="bootstrapCSS" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link id="darkThemeCSS" rel="stylesheet" href="assets/css/dark-mode.css">
+  <link id="rtlCSS" rel="stylesheet" href="assets/css/rtl.css" disabled>
+</head>
+<body>
+
+  <!-- Header (Navbar) -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-custom py-3" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: var(--primary-color);">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+          </svg>
+          <span class="fs-4 fw-bold" style="color: var(--secondary-color);">BrewCraft</span>
+        </a>
+
+        <!-- Hamburger toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas navigation -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: var(--secondary-color);">BrewCraft</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-2">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0 flex-nowrap">
+              <button id="themeToggle" class="toggle-btn" aria-label="Toggle Dark Mode">
+                <i class="bi bi-moon-fill" aria-hidden="true"></i>
+              </button>
+              <button id="rtlToggle" class="toggle-btn" aria-label="Toggle Right to Left Layout">
+                <span>RTL</span>
+              </button>
+              <a href="login.html" class="btn-custom btn-custom-secondary px-3 py-2 fs-6">
+                <i class="bi bi-person-fill"></i> Login
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Inner Hero -->
+    <section class="inner-hero py-5 text-center bg-secondary" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));" aria-labelledby="services-hero-title">
+      <div class="container py-4">
+        <h1 id="services-hero-title" class="text-white mb-3">Brewery Engineering Services</h1>
+        <p class="lead text-light max-width-md mx-auto">From garage-scale hobby setups to fully automated commercial brewery installation, our team provides certified expertise.</p>
+      </div>
+    </section>
+
+    <!-- Services Grid (Section 1) -->
+    <section class="py-5" aria-labelledby="grid-heading">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Service Card 1 -->
+          <div class="col-md-6">
+            <div class="card-custom">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-compass"></i></div>
+              <h3 class="fs-4 mb-2">Consultations & Layout Planning</h3>
+              <p>Work directly with our hardware engineers to design optimized fluid lines, floor drainage solutions, and glycol distribution piping layouts.</p>
+              <div class="card-custom-cta">
+                <a href="service-details.html" class="btn-custom btn-custom-primary w-100">Explore Planning</a>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 2 -->
+          <div class="col-md-6">
+            <div class="card-custom">
+              <div class="fs-1 text-secondary mb-3"><i class="bi bi-tools"></i></div>
+              <h3 class="fs-4 mb-2">Equipment Custom Setup & Installation</h3>
+              <p>On-site welding, seal validation, tri-clamp manifold mounting, and temperature probe calibration handled by our certified technicians.</p>
+              <div class="card-custom-cta">
+                <a href="service-details.html" class="btn-custom btn-custom-primary w-100">Explore Custom Setup</a>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 3 -->
+          <div class="col-md-6">
+            <div class="card-custom">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-calculator"></i></div>
+              <h3 class="fs-4 mb-2">Recipe Scaling & Ingredients</h3>
+              <p>Need to scale a 5-Gallon homebrew recipe into a 10-Barrel production batch? Our lab scales grist ratios and yeast counts mathematically.</p>
+              <div class="card-custom-cta">
+                <a href="service-details.html" class="btn-custom btn-custom-primary w-100">Explore Scaling</a>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 4 -->
+          <div class="col-md-6">
+            <div class="card-custom">
+              <div class="fs-1 text-secondary mb-3"><i class="bi bi-cpu"></i></div>
+              <h3 class="fs-4 mb-2">Brewery Automation Systems</h3>
+              <p>Install programmable logic controllers (PLCs), motorized butterfly valves, and cloud-linked fermentation trackers for ultimate consistency.</p>
+              <div class="card-custom-cta">
+                <a href="service-details.html" class="btn-custom btn-custom-primary w-100">Explore Automation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F.A.Q Accordion (Section 2) -->
+    <section class="py-5 bg-light-subtle" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="faq-heading" class="mb-3">Frequently Asked Questions</h2>
+          <p class="text-muted">Common queries regarding custom installations, shipping, and equipment sanitization.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="brewFaqAccordion">
+              <!-- Item 1 -->
+              <div class="accordion-item bg-white border">
+                <h4 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    What grade of stainless steel do you use?
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#brewFaqAccordion">
+                  <div class="accordion-body">
+                    We use exclusively SUS 304 food-grade polished stainless steel for all our kettles, conical fermenters, and piping. Specialty commercial manifolds can be customized with acid-resistant SUS 316.
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="accordion-item bg-white border mt-2">
+                <h4 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Do you ship ingredient kits internationally?
+                  </button>
+                </h4>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#brewFaqAccordion">
+                  <div class="accordion-body">
+                    Yes, we ship nitrogen-flushed hop pellets and vacuum-sealed malt grains worldwide. Liquid yeast strains are packaged in chilled thermal packs to ensure viability during transit.
+                  </div>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="accordion-item bg-white border mt-2">
+                <h4 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I automate temperature controls in older kettles?
+                  </button>
+                </h4>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#brewFaqAccordion">
+                  <div class="accordion-body">
+                    Absolutely. We build retrofitted digital control brackets with thermowells that slip into standard kettle ports, enabling easy connection to automatic heating elements.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3" aria-label="Footer Navigation">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 text-center text-lg-start">
+          <a class="d-inline-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.html">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: var(--primary-color);">
+              <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+            </svg>
+            <span class="fs-4 fw-bold text-white">BrewCraft</span>
+          </a>
+          <p class="text-light-emphasis">Empowering craft breweries and homebrew enthusiasts with superior ingredients and industry-standard brewing machinery.</p>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
+            <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-light-emphasis text-decoration-none">Home Standard</a></li>
+            <li><a href="home-2.html" class="text-light-emphasis text-decoration-none">Home Premium</a></li>
+            <li><a href="about.html" class="text-light-emphasis text-decoration-none">Our Story</a></li>
+            <li><a href="services.html" class="text-light-emphasis text-decoration-none">Brewing Solutions</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+          <h5 class="text-white mb-3">Resources</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="blog.html" class="text-light-emphasis text-decoration-none">Community Blog</a></li>
+            <li><a href="gallery.html" class="text-light-emphasis text-decoration-none">Equipment Gallery</a></li>
+            
+            <li><a href="contact.html" class="text-light-emphasis text-decoration-none">Get In Touch</a></li>
+            <li><a href="coming-soon.html" class="text-light-emphasis text-decoration-none">Upcoming Gear</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary">
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 text-light-emphasis text-center text-md-start">&copy; 2026 BrewCraft Inc. All rights reserved.</p>
+        <div class="d-flex gap-4">
+          <a href="#" class="text-light-emphasis text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-light-emphasis text-decoration-none">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="show-on-scroll" aria-label="Back to Top">
+    <i class="bi bi-chevron-up fs-4"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

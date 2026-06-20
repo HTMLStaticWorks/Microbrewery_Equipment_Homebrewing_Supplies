@@ -1,1 +1,386 @@
-Microbrewery_Equipment_Homebrewing_Supplies
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop premium fermenters, brew kettles, ingredient kits, and custom microbrewery equipment. Explore recipe guides and join the homebrewing community.">
+  <title>Home - Microbrewery Equipment & Homebrewing Supplies</title>
+  
+  <!-- Bootstrap 5 CSS CDN (Handled dynamically by main.js for RTL) -->
+  <link id="bootstrapCSS" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link id="darkThemeCSS" rel="stylesheet" href="assets/css/dark-mode.css">
+  <link id="rtlCSS" rel="stylesheet" href="assets/css/rtl.css" disabled>
+</head>
+<body>
+
+  <!-- 1. Header (Navbar) -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-custom py-3" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Logo (Max 180x50px) -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: var(--primary-color);">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+          </svg>
+          <span class="fs-4 fw-bold" style="color: var(--secondary-color);">BrewCraft</span>
+        </a>
+
+        <!-- Hamburger toggle for smaller screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas for responsive navigation -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: var(--secondary-color);">BrewCraft</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-2">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- Controls (Theme, RTL, Auth) -->
+            <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0 flex-nowrap">
+              <button id="themeToggle" class="toggle-btn" aria-label="Toggle Dark Mode">
+                <i class="bi bi-moon-fill" aria-hidden="true"></i>
+              </button>
+              <button id="rtlToggle" class="toggle-btn" aria-label="Toggle Right to Left Layout">
+                <span>RTL</span>
+              </button>
+              <a href="login.html" class="btn-custom btn-custom-secondary px-3 py-2 fs-6">
+                <i class="bi bi-person-fill"></i> Login
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. Hero Section (Home Layout) -->
+    <section class="hero-1 py-5 d-flex align-items-center" aria-labelledby="hero-title">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <h1 id="hero-title" class="mb-4">Crafting Liquid Gold Starts Here</h1>
+            <p class="lead mb-5">Premium copper kettles, temperature-controlled conical fermenters, and farm-sourced ingredient kits designed for professional craft microbreweries and master homebrewers.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="services.html" class="btn-custom btn-custom-primary">Explore Equipment</a>
+              <a href="contact.html" class="btn-custom btn-custom-secondary">Book Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Featured Categories (Section 2) -->
+    <section class="py-5 bg-light-subtle" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="categories-heading" class="mb-3">Brewery Components</h2>
+          <p class="text-muted">High-grade engineering meets custom craft brewing supplies.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Category 1 -->
+          <div class="col-md-4">
+            <div class="card-custom">
+              <div class="p-3 bg-primary-subtle rounded-circle mb-3">
+                <i class="bi bi-house-gear fs-1 text-primary"></i>
+              </div>
+              <h3 class="mb-2">Microbrew Kettles</h3>
+              <p>Heavy-duty, tri-clamp copper & stainless steel boiling vessels engineered for premium temperature control.</p>
+              <div class="card-custom-cta">
+                <a href="services.html" class="btn-custom btn-custom-outline w-100">View Kettles</a>
+              </div>
+            </div>
+          </div>
+          <!-- Category 2 -->
+          <div class="col-md-4">
+            <div class="card-custom">
+              <div class="p-3 bg-success-subtle rounded-circle mb-3">
+                <i class="bi bi-thermometer-half fs-1 text-success"></i>
+              </div>
+              <h3 class="mb-2">Fermenters</h3>
+              <p>Conical fermenters with integrated cooling jackets to keep yeast working at stable, optimal levels.</p>
+              <div class="card-custom-cta">
+                <a href="services.html" class="btn-custom btn-custom-outline w-100">View Fermenters</a>
+              </div>
+            </div>
+          </div>
+          <!-- Category 3 -->
+          <div class="col-md-4">
+            <div class="card-custom">
+              <div class="p-3 bg-warning-subtle rounded-circle mb-3">
+                <i class="bi bi-flower1 fs-1 text-warning"></i>
+              </div>
+              <h3 class="mb-2">Ingredient Kits</h3>
+              <p>Hand-selected organic malted grain, specialty hops, and yeast strains for perfect IPAs, stouts, and ales.</p>
+              <div class="card-custom-cta">
+                <a href="services.html" class="btn-custom btn-custom-outline w-100">View Kits</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Dynamic/Skeleton Loaders & Bestsellers (Section 3) -->
+    <section class="py-5" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="products-heading" class="mb-3">Best Sellers</h2>
+          <p class="text-muted">The equipment and ingredients homebrewers and professionals rely on most.</p>
+        </div>
+        
+        <!-- Interactive loader container -->
+        <div class="dynamic-load-container" data-skeletons="3">
+          <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+              <div class="card-custom">
+                <i class="bi bi-award fs-1 text-primary mb-3"></i>
+                <h3 class="mb-2">Pro-Series Conical</h3>
+                <p>15-Gallon double-walled insulated fermenter with pressure-gauge setup.</p>
+                <div class="card-custom-cta">
+                  <a href="contact.html" class="btn-custom btn-custom-primary w-100">Reserve Setup</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+              <div class="card-custom">
+                <i class="bi bi-heptagon fs-1 text-secondary mb-3"></i>
+                <h3 class="mb-2">Citra Hops Kit</h3>
+                <p>5-Gallon craft IPA recipe kit with fresh cascade and Citra hops.</p>
+                <div class="card-custom-cta">
+                  <a href="contact.html" class="btn-custom btn-custom-primary w-100">Add to Batch</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+              <div class="card-custom">
+                <i class="bi bi-speedometer2 fs-1 text-success mb-3"></i>
+                <h3 class="mb-2">Digital Brew Controller</h3>
+                <p>Pro-grade digital control system panel for heating element automation.</p>
+                <div class="card-custom-cta">
+                  <a href="contact.html" class="btn-custom btn-custom-primary w-100">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Recipe Guides Showcase (Section 4) -->
+    <section class="py-5 bg-light-subtle" aria-labelledby="recipes-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="recipes-heading" class="mb-3">Master Recipe Guides</h2>
+          <p class="text-muted">Expertly formulated guidelines for brewing award-winning craft batches.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Recipe Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-custom">
+              <div class="badge bg-warning text-dark mb-3">Intermediate</div>
+              <h3 class="mb-2">Hazy Hops IPA</h3>
+              <p>An aromatic India Pale Ale packed with citrus and tropical fruit punch notes.</p>
+              <div class="w-100 border-top pt-3 d-flex justify-content-between text-muted fs-6">
+                <span><i class="bi bi-clock"></i> 4 Weeks</span>
+                <span><i class="bi bi-fire"></i> 6.2% ABV</span>
+              </div>
+              <div class="card-custom-cta">
+                <a href="blog-details.html" class="btn-custom btn-custom-secondary w-100">Get Recipe</a>
+              </div>
+            </div>
+          </div>
+          <!-- Recipe Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-custom">
+              <div class="badge bg-danger mb-3">Expert</div>
+              <h3 class="mb-2">Imperial Stout</h3>
+              <p>A thick, dark, and luxurious espresso oatmeal stout with rich roasted undertones.</p>
+              <div class="w-100 border-top pt-3 d-flex justify-content-between text-muted fs-6">
+                <span><i class="bi bi-clock"></i> 8 Weeks</span>
+                <span><i class="bi bi-fire"></i> 9.5% ABV</span>
+              </div>
+              <div class="card-custom-cta">
+                <a href="blog-details.html" class="btn-custom btn-custom-secondary w-100">Get Recipe</a>
+              </div>
+            </div>
+          </div>
+          <!-- Recipe Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-custom">
+              <div class="badge bg-success mb-3">Beginner</div>
+              <h3 class="mb-2">Bavarian Wheat</h3>
+              <p>A crisp, refreshing, and clean German hefeweizen with hints of banana and clove.</p>
+              <div class="w-100 border-top pt-3 d-flex justify-content-between text-muted fs-6">
+                <span><i class="bi bi-clock"></i> 2 Weeks</span>
+                <span><i class="bi bi-fire"></i> 5.0% ABV</span>
+              </div>
+              <div class="card-custom-cta">
+                <a href="blog-details.html" class="btn-custom btn-custom-secondary w-100">Get Recipe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Testimonials (Section 5) -->
+    <section class="py-5" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="testimonials-heading" class="mb-3">Craft Brewer Feedback</h2>
+          <p class="text-muted">What commercial brewmasters and weekend homebrew hobbyists say about BrewCraft.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card-custom p-4">
+              <div class="d-flex align-items-center gap-3 mb-3 text-start w-100">
+                <i class="bi bi-person-circle fs-1 text-primary"></i>
+                <div>
+                  <h5 class="mb-0 fw-bold">Marcus Thorne</h5>
+                  <small class="text-muted">Head Brewer, Golden Anchor Brewpub</small>
+                </div>
+              </div>
+              <p class="fst-italic">"The jacketed conical fermenters we purchased from BrewCraft revolutionized our small-batch temperature control. Our pale ales have never tasted cleaner!"</p>
+              <div class="text-warning mt-2 w-100 text-start">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-custom p-4">
+              <div class="d-flex align-items-center gap-3 mb-3 text-start w-100">
+                <i class="bi bi-person-circle fs-1 text-secondary"></i>
+                <div>
+                  <h5 class="mb-0 fw-bold">Sarah Jenkins</h5>
+                  <small class="text-muted">Homebrew Hobbyist (8 Years)</small>
+                </div>
+              </div>
+              <p class="fst-italic">"The yeast strains and Cascade hops kit arrived perfectly fresh. Having active community forums and recipe scaling guides on this site has helper my hobby grow so much!"</p>
+              <div class="text-warning mt-2 w-100 text-start">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Joint Action Panel & Newsletter (Section 6) -->
+    <section class="py-5 bg-secondary text-white text-center" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading" class="text-white mb-3">Join the Homebrew Alliance</h2>
+        <p class="mb-4">Receive recipes, community blog writeups, and exclusive deals on top-tier brewing equipment.</p>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <!-- Newsletter form with client-side validation -->
+            <form class="needs-validation d-flex flex-column flex-sm-row gap-2" novalidate>
+              <div class="position-relative flex-grow-1 text-start">
+                <label for="newsletterEmail" class="visually-hidden">Email Address</label>
+                <input type="email" class="form-control form-control-lg border-0 bg-white text-dark" id="newsletterEmail" placeholder="Enter your email" required>
+                <div class="invalid-tooltip-custom">
+                  Please enter a valid email address.
+                </div>
+              </div>
+              <button class="btn-custom btn-custom-primary border-0" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3" aria-label="Footer Navigation">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <!-- Footer Logo & Motto -->
+        <div class="col-lg-4 text-center text-lg-start">
+          <a class="d-inline-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.html">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: var(--primary-color);">
+              <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+            </svg>
+            <span class="fs-4 fw-bold text-white">BrewCraft</span>
+          </a>
+          <p class="text-light-emphasis">Empowering craft breweries and homebrew enthusiasts with superior ingredients and industry-standard brewing machinery.</p>
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
+            <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-light-emphasis text-decoration-none">Home Standard</a></li>
+            <li><a href="home-2.html" class="text-light-emphasis text-decoration-none">Home Premium</a></li>
+            <li><a href="about.html" class="text-light-emphasis text-decoration-none">Our Story</a></li>
+            <li><a href="services.html" class="text-light-emphasis text-decoration-none">Brewing Solutions</a></li>
+            
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+          <h5 class="text-white mb-3">Resources</h5>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a href="blog.html" class="text-light-emphasis text-decoration-none">Community Blog</a></li>
+            <li><a href="gallery.html" class="text-light-emphasis text-decoration-none">Equipment Gallery</a></li>
+            
+            <li><a href="contact.html" class="text-light-emphasis text-decoration-none">Get In Touch</a></li>
+            <li><a href="coming-soon.html" class="text-light-emphasis text-decoration-none">Upcoming Gear</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary">
+
+      <!-- Bottom Bar -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 text-light-emphasis text-center text-md-start">&copy; 2026 BrewCraft Inc. All rights reserved.</p>
+        <div class="d-flex gap-4">
+          <a href="#" class="text-light-emphasis text-decoration-none">Privacy Policy</a>
+          <a href="#" class="text-light-emphasis text-decoration-none">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 9. Back to Top Button -->
+  <button id="backToTop" class="show-on-scroll" aria-label="Back to Top">
+    <i class="bi bi-chevron-up fs-4"></i>
+  </button>
+
+  <!-- Bootstrap 5 JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
