@@ -70,7 +70,7 @@
 
   <main>
     <!-- Inner Hero -->
-    <section class="inner-hero py-5 text-center bg-secondary" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));" aria-labelledby="contact-hero-title">
+    <section class="inner-hero py-5 text-center bg-secondary" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/inner-hero-bg.webp');" aria-labelledby="contact-hero-title">
       <div class="container py-4">
         <h1 id="contact-hero-title" class="text-white mb-3">Contact & Session Bookings</h1>
         <p class="lead text-light max-width-md mx-auto">Send our Portland warehouse general inquiries or book custom layout/welding reservations below.</p>
@@ -96,7 +96,7 @@
             </div>
 
             <!-- General Message Form -->
-            <div class="card card-custom p-4 align-items-stretch text-start bg-light-subtle">
+            <div class="card card-custom p-4 align-items-stretch text-start bg-light-subtle" style="height: auto;">
               <h3 class="fs-4 mb-3">General Inquiries</h3>
               <form class="needs-validation text-start" novalidate>
                 <div class="mb-3 position-relative">
@@ -122,7 +122,7 @@
           <!-- Column 2: Booking slots reservation -->
           <div class="col-lg-6">
             <h2 class="h3 mb-4">Reserve Technical Consultations</h2>
-            <div class="card card-custom p-4 align-items-stretch text-start border-primary">
+            <div class="card card-custom p-4 align-items-stretch text-start border-primary" style="height: auto;">
               <span class="badge bg-primary text-white mb-3 align-self-start">SCHEDULE ONLINE</span>
               <h3 class="fs-4 mb-3 text-primary">Booking Calendar</h3>
               
@@ -163,6 +163,96 @@
 
                 <button type="submit" class="btn-custom btn-custom-primary w-100">Confirm Slot</button>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Map Section (Section 2) -->
+    <section class="py-5 bg-light-subtle" aria-labelledby="map-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="map-heading" class="mb-3">Find Our Warehouse</h2>
+          <p class="text-muted">Located in the heart of Portland's industrial district. Stop by for equipment pickups or consultations.</p>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8">
+            <div class="ratio ratio-21x9 rounded-3 overflow-hidden shadow-sm border border-secondary-subtle">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.6622830841267!2d-122.68413982337775!3d45.51680193026364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a16314d13e3%3A0x64e7c7a26f0413!2sPortland%20State%20University!5e0!3m2!1sen!2sus!4v1719000000000!5m2!1sen!2sus" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="BrewCraft Portland Warehouse Location Map">
+              </iframe>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-custom p-4 text-start align-items-stretch" style="height: auto;">
+              <h3 class="fs-4 mb-3">Visiting Protocol</h3>
+              <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                <li class="d-flex align-items-start gap-2">
+                  <i class="bi bi-clock-fill text-primary mt-1"></i>
+                  <div>
+                    <strong>Hours:</strong>
+                    <p class="small text-muted mb-0">Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday (Pickups Only): 10:00 AM - 2:00 PM</p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                  <i class="bi bi-p-circle-fill text-secondary mt-1"></i>
+                  <div>
+                    <strong>Parking:</strong>
+                    <p class="small text-muted mb-0">Free street parking is available on Brewmasters Way and in our dedicated side loading zone.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Department Contacts (Section 3) -->
+    <section class="py-5" aria-labelledby="departments-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="departments-heading" class="mb-3">Connect Directly</h2>
+          <p class="text-muted">Skip the general form queue and email the specific division handling your project scale.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Sales -->
+          <div class="col-md-4">
+            <div class="card-custom p-4 text-center" style="height: auto;">
+              <div class="p-3 bg-primary-subtle rounded-circle mb-3 d-inline-flex">
+                <i class="bi bi-cart-check fs-1 text-primary"></i>
+              </div>
+              <h3 class="fs-4 mb-2">Sales & Estimates</h3>
+              <p class="small text-muted mb-3">Custom build sizing, pricing quotes, and order status updates.</p>
+              <a href="mailto:sales@brewcraft.com" class="fw-bold text-decoration-none" style="color: var(--primary-color);">sales@brewcraft.com</a>
+            </div>
+          </div>
+          <!-- Tech Support -->
+          <div class="col-md-4">
+            <div class="card-custom p-4 text-center border-primary" style="height: auto;">
+              <div class="p-3 bg-success-subtle rounded-circle mb-3 d-inline-flex">
+                <i class="bi bi-wrench-adjustable fs-1 text-success"></i>
+              </div>
+              <h3 class="fs-4 mb-2">Technical Support</h3>
+              <p class="small text-muted mb-3">PLC controller troubleshooting, valve calibration, and line testing help.</p>
+              <a href="mailto:support@brewcraft.com" class="fw-bold text-decoration-none" style="color: var(--secondary-color);">support@brewcraft.com</a>
+            </div>
+          </div>
+          <!-- Press / Partnership -->
+          <div class="col-md-4">
+            <div class="card-custom p-4 text-center" style="height: auto;">
+              <div class="p-3 bg-warning-subtle rounded-circle mb-3 d-inline-flex">
+                <i class="bi bi-people fs-1 text-warning"></i>
+              </div>
+              <h3 class="fs-4 mb-2">Media & Partners</h3>
+              <p class="small text-muted mb-3">Distributor requests, press kits, and collaborative recipe formulation projects.</p>
+              <a href="mailto:media@brewcraft.com" class="fw-bold text-decoration-none" style="color: var(--primary-color);">media@brewcraft.com</a>
             </div>
           </div>
         </div>

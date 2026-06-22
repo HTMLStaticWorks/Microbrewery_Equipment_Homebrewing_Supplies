@@ -30,3 +30,44 @@
   border-color: var(--primary-color);
   color: var(--primary-color);
 }
+
+[data-theme="dark"] .text-dark {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .badge.text-dark,
+[data-theme="dark"] .badge.bg-warning {
+  color: #111827 !important;
+}
+
+[data-theme="dark"] .bg-light-subtle {
+  background-color: var(--bg-secondary) !important;
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+  color: var(--text-secondary) !important;
+  opacity: 0.6;
+}
+
+[data-theme="dark"] input.bg-white,
+[data-theme="dark"] select.bg-white,
+[data-theme="dark"] textarea.bg-white {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary {
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary:hover {
+  background-color: var(--border-color) !important;
+}

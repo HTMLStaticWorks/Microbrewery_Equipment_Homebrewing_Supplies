@@ -331,11 +331,44 @@ function initBrewCalculator() {
    10. Bubbling CSS Animations Dynamic Generator
    ========================================== */
 function initBubbles() {
+  // Automatically add bubble container to all card-custom elements that aren't form cards
+  const cards = document.querySelectorAll('.card-custom');
+  cards.forEach(card => {
+    // Skip login/register and callback form cards
+    if (card.classList.contains('card') || card.querySelector('form')) return;
+    
+    // Check if it already has a bubble-container
+    if (!card.querySelector('.bubble-container')) {
+      card.classList.add('bubble-card');
+      
+      // Create bubble container
+      const container = document.createElement('div');
+      container.classList.add('bubble-container');
+      
+      // Gather all current child nodes
+      const children = Array.from(card.childNodes);
+      
+      // Create content wrapper
+      const wrapper = document.createElement('div');
+      wrapper.style.position = 'relative';
+      wrapper.style.zIndex = '2';
+      
+      // Append children to wrapper
+      children.forEach(child => wrapper.appendChild(child));
+      
+      // Append container and wrapper to card
+      card.appendChild(container);
+      card.appendChild(wrapper);
+    }
+  });
+
   const containers = document.querySelectorAll('.bubble-container');
   if (containers.length === 0) return;
 
   containers.forEach(container => {
-    // Generate 8 floating bubble elements with random properties
+    // Prevent duplicate bubble generation if called multiple times (e.g. after skeleton loader finishes)
+    if (container.children.length > 0) return;
+
     const bubbleCount = 8;
     for (let i = 0; i < bubbleCount; i++) {
       const bubble = document.createElement('div');

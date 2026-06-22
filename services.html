@@ -72,7 +72,7 @@
 
   <main>
     <!-- Inner Hero -->
-    <section class="inner-hero py-5 text-center bg-secondary" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));" aria-labelledby="services-hero-title">
+    <section class="inner-hero py-5 text-center bg-secondary" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/inner-hero-bg.webp');" aria-labelledby="services-hero-title">
       <div class="container py-4">
         <h1 id="services-hero-title" class="text-white mb-3">Brewery Engineering Services</h1>
         <p class="lead text-light max-width-md mx-auto">From garage-scale hobby setups to fully automated commercial brewery installation, our team provides certified expertise.</p>
@@ -86,7 +86,7 @@
           <!-- Service Card 1 -->
           <div class="col-md-6">
             <div class="card-custom">
-              <div class="fs-1 text-primary mb-3"><i class="bi bi-compass"></i></div>
+              <img src="assets/images/kettle.webp" alt="Consultations & Layout Planning" class="card-custom-img">
               <h3 class="fs-4 mb-2">Consultations & Layout Planning</h3>
               <p>Work directly with our hardware engineers to design optimized fluid lines, floor drainage solutions, and glycol distribution piping layouts.</p>
               <div class="card-custom-cta">
@@ -97,7 +97,7 @@
           <!-- Service Card 2 -->
           <div class="col-md-6">
             <div class="card-custom">
-              <div class="fs-1 text-secondary mb-3"><i class="bi bi-tools"></i></div>
+              <img src="assets/images/brewery-valves.webp" alt="Equipment Custom Setup & Installation" class="card-custom-img">
               <h3 class="fs-4 mb-2">Equipment Custom Setup & Installation</h3>
               <p>On-site welding, seal validation, tri-clamp manifold mounting, and temperature probe calibration handled by our certified technicians.</p>
               <div class="card-custom-cta">
@@ -108,7 +108,7 @@
           <!-- Service Card 3 -->
           <div class="col-md-6">
             <div class="card-custom">
-              <div class="fs-1 text-primary mb-3"><i class="bi bi-calculator"></i></div>
+              <img src="assets/images/barley-malt.webp" alt="Recipe Scaling & Ingredients" class="card-custom-img">
               <h3 class="fs-4 mb-2">Recipe Scaling & Ingredients</h3>
               <p>Need to scale a 5-Gallon homebrew recipe into a 10-Barrel production batch? Our lab scales grist ratios and yeast counts mathematically.</p>
               <div class="card-custom-cta">
@@ -119,7 +119,7 @@
           <!-- Service Card 4 -->
           <div class="col-md-6">
             <div class="card-custom">
-              <div class="fs-1 text-secondary mb-3"><i class="bi bi-cpu"></i></div>
+              <img src="assets/images/brewery-automation.webp" alt="Brewery Automation Systems" class="card-custom-img">
               <h3 class="fs-4 mb-2">Brewery Automation Systems</h3>
               <p>Install programmable logic controllers (PLCs), motorized butterfly valves, and cloud-linked fermentation trackers for ultimate consistency.</p>
               <div class="card-custom-cta">
@@ -131,8 +131,53 @@
       </div>
     </section>
 
-    <!-- F.A.Q Accordion (Section 2) -->
-    <section class="py-5 bg-light-subtle" aria-labelledby="faq-heading">
+    <!-- 3. Specialized Maintenance & On-Demand Services (Section 2) -->
+    <section class="py-5 bg-light-subtle" aria-labelledby="specialized-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="specialized-heading" class="mb-3">Specialized Maintenance & Support</h2>
+          <p class="text-muted">Certified inspection and custom metal fabrication plans to keep your operations running continuously.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Service Card 1 -->
+          <div class="col-md-4">
+            <div class="card-custom">
+              <img src="assets/images/brewery-valves.webp" alt="Preventative Maintenance" class="card-custom-img">
+              <h3 class="fs-4 mb-2">System Maintenance</h3>
+              <p>Quarterly seal inspections, gasket replacements, and pressure test certifications for commercial brew setups.</p>
+              <div class="card-custom-cta">
+                <a href="service-details.html" class="btn-custom btn-custom-outline w-100">Schedule Service</a>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 2 -->
+          <div class="col-md-4">
+            <div class="card-custom">
+              <img src="assets/images/brewhouse-vessel.webp" alt="Custom Stainless Fabrication" class="card-custom-img">
+              <h3 class="fs-4 mb-2">Custom Metal Fabrication</h3>
+              <p>On-demand welding, custom manifold paths, and heating jacket adjustments tailored for unique floor layouts.</p>
+              <div class="card-custom-cta">
+                <a href="service-details.html" class="btn-custom btn-custom-outline w-100">Request Quote</a>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 3 -->
+          <div class="col-md-4">
+            <div class="card-custom">
+              <img src="assets/images/brewery-automation.webp" alt="Staff Onboarding & Training" class="card-custom-img">
+              <h3 class="fs-4 mb-2">Crew Onboarding & Training</h3>
+              <p>Certified safety guidelines, PLC system walkthroughs, and recipe scaling tutorials for brewery staff.</p>
+              <div class="card-custom-cta">
+                <a href="service-details.html" class="btn-custom btn-custom-outline w-100">Request Training</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F.A.Q Accordion (Section 3) -->
+    <section class="py-5" aria-labelledby="faq-heading">
       <div class="container">
         <div class="text-center mb-5">
           <h2 id="faq-heading" class="mb-3">Frequently Asked Questions</h2>

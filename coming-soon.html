@@ -72,15 +72,16 @@
 
   <!-- Main Countdown Container -->
   <main class="flex-grow-1 d-flex align-items-center py-5">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Text & Countdown Column -->
+        <div class="col-lg-6 text-center text-lg-start">
           <span class="badge bg-primary text-white mb-3">NEW HARDWARE INCOMING</span>
           <h1 class="h2 mb-4">Pro-Series V2 Glycol Setup</h1>
           <p class="lead text-muted mb-5">We are finalizing automated pressure controllers and heavy-duty 30-Gallon conical designs. Sign up to get priority reservation access.</p>
           
           <!-- Countdown Grid -->
-          <div id="countdown-timer" class="row justify-content-center g-3 mb-5">
+          <div id="countdown-timer" class="row justify-content-center justify-content-lg-start g-3 mb-5">
             <div class="col-3 col-md-2">
               <div class="card p-3 border-secondary-subtle">
                 <span id="countdown-days" class="fs-2 fw-bold text-primary">00</span>
@@ -108,7 +109,7 @@
           </div>
 
           <!-- Notification sign-up -->
-          <form class="needs-validation d-flex flex-column flex-sm-row justify-content-center gap-2 max-width-md mx-auto" novalidate>
+          <form class="needs-validation d-flex flex-column flex-sm-row gap-2" novalidate>
             <div class="position-relative flex-grow-1 text-start">
               <label for="comingSoonEmail" class="visually-hidden">Email Address</label>
               <input type="email" class="form-control form-control-lg border bg-white text-dark" id="comingSoonEmail" placeholder="Enter your email" required>
@@ -118,6 +119,13 @@
             </div>
             <button class="btn-custom btn-custom-primary border-0" type="submit">Notify Me</button>
           </form>
+        </div>
+
+        <!-- Visual Asset Column -->
+        <div class="col-lg-6">
+          <div class="position-relative overflow-hidden rounded-3 shadow-lg">
+            <img src="assets/images/glycol-system.webp" alt="BrewCraft Pro-Series V2 Glycol Setup" class="img-fluid w-100 object-fit-cover" style="height: 400px; border-radius: 6px;">
+          </div>
         </div>
       </div>
     </div>
