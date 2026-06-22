@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" width="100%" height="100%">
+  <defs>
+    <!-- Cyan Blueprint Neon Glow -->
+    <filter id="blueprintGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Beer Golden Flow Gradient -->
+    <linearGradient id="beerGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4" />
+      <stop offset="35%" stop-color="#FFB700" />
+      <stop offset="70%" stop-color="#E27A00" />
+      <stop offset="100%" stop-color="#9A4E00" />
+    </linearGradient>
+
+    <!-- Blueprint Blue Gradient -->
+    <linearGradient id="blueprintGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BEE3FF" />
+      <stop offset="50%" stop-color="#4DA6FF" />
+      <stop offset="100%" stop-color="#0066CC" />
+    </linearGradient>
+
+    <!-- Liquid Shadow / Glow -->
+    <filter id="liquidGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#FF9900" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Left Side: Engineering Blueprint Stem of "B" -->
+  <g filter="url(#blueprintGlow)">
+    <!-- Blueprint grid panel backdrop (premium dark glassmorphic look) -->
+    <rect x="12" y="10" width="30" height="80" rx="6" fill="#0A1626" stroke="#4DA6FF" stroke-width="1.2" />
+    
+    <!-- Fine geometric grid coordinates -->
+    <path d="M12 25 H42 M12 40 H42 M12 55 H42 M12 70 H42 M12 85 H42" stroke="#3385ff" stroke-width="0.5" opacity="0.3" />
+    <path d="M22 10 V90 M32 10 V90" stroke="#3385ff" stroke-width="0.5" opacity="0.3" />
+
+    <!-- Precise Fermenter Column Plan -->
+    <!-- Main Cylinder -->
+    <rect x="18" y="24" width="18" height="34" rx="2" fill="none" stroke="url(#blueprintGrad)" stroke-width="1.8" />
+    <!-- Cooling manifold lines -->
+    <path d="M21 34 H33 M21 41 H33 M21 48 H33" stroke="#4DA6FF" stroke-width="1" opacity="0.8" />
+    <!-- Conical Bottom -->
+    <path d="M18 58 L27 75 L36 58 Z" fill="none" stroke="url(#blueprintGrad)" stroke-width="1.8" stroke-linejoin="round" />
+    
+    <!-- Support columns -->
+    <line x1="18" y1="50" x2="15" y2="82" stroke="#4DA6FF" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="36" y1="50" x2="39" y2="82" stroke="#4DA6FF" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Top fittings and airlock valve -->
+    <path d="M24 24 L27 18 H27 L30 24" fill="none" stroke="#4DA6FF" stroke-width="1.5" />
+    <circle cx="27" cy="17" r="1.5" fill="#BEE3FF" />
+  </g>
+
+  <!-- Right Side: Flowing Craft Beer (forming the B loops) -->
+  <g filter="url(#liquidGlow)">
+    <!-- Top Loop (Beer Flow) -->
+    <path d="M42 20 
+             C56 20, 80 23, 80 41 
+             C80 52, 64 53, 42 53 
+             Z" fill="url(#beerGold)" />
+             
+    <!-- Bottom Loop (Beer Flow with organic drips at bottom) -->
+    <path d="M42 53 
+             C70 53, 84 56, 84 73 
+             C84 88, 62 88, 42 88 
+             Z" fill="url(#beerGold)" />
+
+    <!-- Organic Beer Drips & flow transitions -->
+    <path d="M48 53 C48 58, 51 61, 53 61 C55 61, 56 58, 56 53 Z" fill="url(#beerGold)" />
+    <path d="M68 88 C68 93, 70 95, 72 95 C74 95, 75 93, 75 88 Z" fill="url(#beerGold)" />
+  </g>
+
+  <!-- Hop Cone Details inside the Gold/Beer section (Modern Abstract Lines) -->
+  <g stroke="#8C4600" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center scale -->
+    <path d="M61 62 C64 66, 61 71, 59 74 C57 71, 54 66, 57 62 Z" />
+    <!-- Left scale -->
+    <path d="M54 65 C51 69, 54 73, 56 74" />
+    <!-- Right scale -->
+    <path d="M64 65 C67 69, 64 73, 62 74" />
+    <!-- Hop stem -->
+    <path d="M59 58 C59 60, 60 60, 59 62" />
+  </g>
+
+  <!-- Floating Carbonation Bubbles -->
+  <circle cx="48" cy="15" r="2.2" fill="#FFFFFF" opacity="0.95" />
+  <circle cx="60" cy="13" r="1.5" fill="#FFFFFF" opacity="0.8" />
+  <circle cx="70" cy="27" r="2" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="46" cy="46" r="1.8" fill="#FFFFFF" opacity="0.85" />
+  <circle cx="76" cy="62" r="2.2" fill="#FFFFFF" opacity="0.95" />
+  <circle cx="56" cy="84" r="1.5" fill="#FFFFFF" opacity="0.8" />
+  
+  <!-- Mini bubble clusters -->
+  <circle cx="78" cy="38" r="0.8" fill="#FFFFFF" opacity="0.6" />
+  <circle cx="81" cy="71" r="1" fill="#FFFFFF" opacity="0.7" />
+
+  <!-- Alignment Crosshairs (Architectural Blueprint Marks) -->
+  <g stroke="#3385ff" stroke-width="0.8" opacity="0.6" filter="url(#blueprintGlow)">
+    <path d="M6 10 H13 M10 6 V13" />
+    <path d="M6 90 H13 M10 87 V94" />
+  </g>
+</svg>

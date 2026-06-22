@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initSkeletonLoaders();
   initPasswordToggle();
   initCountdown();
+  initBrewCalculator();
+  initBubbles();
 });
 
 /* ==========================================
@@ -142,7 +144,33 @@ function initFormValidation() {
   const forms = document.querySelectorAll('.needs-validation');
 
   Array.from(forms).forEach(form => {
+    const password = form.querySelector('#registerPassword');
+    const confirmPassword = form.querySelector('#registerConfirmPassword');
+    const confirmError = form.querySelector('#confirmPasswordError');
+
+    const validatePasswords = () => {
+      if (!password || !confirmPassword) return;
+      if (confirmPassword.value === '') {
+        confirmPassword.setCustomValidity('Please confirm your password.');
+        if (confirmError) confirmError.textContent = 'Please confirm your password.';
+      } else if (password.value !== confirmPassword.value) {
+        confirmPassword.setCustomValidity('Passwords do not match.');
+        if (confirmError) confirmError.textContent = 'Passwords do not match.';
+      } else {
+        confirmPassword.setCustomValidity('');
+      }
+    };
+
+    if (password && confirmPassword) {
+      password.addEventListener('input', validatePasswords);
+      confirmPassword.addEventListener('input', validatePasswords);
+    }
+
     form.addEventListener('submit', event => {
+      if (password && confirmPassword) {
+        validatePasswords();
+      }
+
       if (!form.checkValidity()) {
         event.preventDefault();
         event.stopPropagation();
@@ -198,6 +226,7 @@ function initSkeletonLoaders() {
     // Simulate fetch delay
     setTimeout(() => {
       container.innerHTML = originalHTML;
+      initBubbles();
     }, 1500);
   });
 }
@@ -262,3 +291,69 @@ function initCountdown() {
   updateTimer();
   setInterval(updateTimer, 1000);
 }
+
+/* ==========================================
+   9. Interactive ABV & Gravity Calculator
+   ========================================== */
+function initBrewCalculator() {
+  const ogInput = document.getElementById('calc-og');
+  const fgInput = document.getElementById('calc-fg');
+  const abvOutput = document.getElementById('calc-abv-result');
+  const attenuationOutput = document.getElementById('calc-atten-result');
+
+  if (!ogInput || !fgInput || !abvOutput || !attenuationOutput) return;
+
+  function calculateABV() {
+    const og = parseFloat(ogInput.value);
+    const fg = parseFloat(fgInput.value);
+
+    if (isNaN(og) || isNaN(fg) || og <= 0 || fg <= 0) {
+      abvOutput.innerText = '0.00%';
+      attenuationOutput.innerText = '0%';
+      return;
+    }
+
+    // Standard ABV formula: (OG - FG) * 131.25
+    const abv = (og - fg) * 131.25;
+    // Apparent Attenuation formula: (OG - FG) / (OG - 1) * 100
+    const attenuation = og > 1 ? ((og - fg) / (og - 1)) * 100 : 0;
+
+    abvOutput.innerText = (abv > 0 ? abv.toFixed(2) : '0.00') + '%';
+    attenuationOutput.innerText = (attenuation > 0 ? Math.round(attenuation) : '0') + '%';
+  }
+
+  ogInput.addEventListener('input', calculateABV);
+  fgInput.addEventListener('input', calculateABV);
+  calculateABV(); // Run initially
+}
+
+/* ==========================================
+   10. Bubbling CSS Animations Dynamic Generator
+   ========================================== */
+function initBubbles() {
+  const containers = document.querySelectorAll('.bubble-container');
+  if (containers.length === 0) return;
+
+  containers.forEach(container => {
+    // Generate 8 floating bubble elements with random properties
+    const bubbleCount = 8;
+    for (let i = 0; i < bubbleCount; i++) {
+      const bubble = document.createElement('div');
+      bubble.classList.add('bubble-particle');
+      
+      const size = Math.random() * 12 + 6; // 6px to 18px
+      const left = Math.random() * 100; // 0% to 100%
+      const delay = Math.random() * 6; // 0s to 6s
+      const duration = Math.random() * 4 + 4; // 4s to 8s
+
+      bubble.style.width = `${size}px`;
+      bubble.style.height = `${size}px`;
+      bubble.style.left = `${left}%`;
+      bubble.style.animationDelay = `${delay}s`;
+      bubble.style.animationDuration = `${duration}s`;
+
+      container.appendChild(bubble);
+    }
+  });
+}
+
