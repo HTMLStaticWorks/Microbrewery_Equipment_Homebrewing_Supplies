@@ -392,7 +392,16 @@ footer.bg-dark .border-secondary {
 .hero-1 {
   padding: 10rem 0;
   text-align: center;
-  background: radial-gradient(circle at center, rgba(var(--primary-rgb), 0.1) 0%, transparent 70%);
+  color: #FFFFFF;
+}
+
+.hero-1 h1 {
+  color: #FFFFFF !important;
+}
+
+.hero-1 p,
+.hero-1 .lead {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .hero-2 {
@@ -541,6 +550,11 @@ footer.bg-dark .border-secondary {
   border-radius: 6px;
 }
 
+.subscribe-input.form-control-lg {
+  height: 48px !important;
+  min-height: 48px !important;
+}
+
 .subscribe-input:not(.bg-transparent) {
   background-color: #FFFFFF !important;
   color: #111827 !important;
@@ -583,6 +597,11 @@ footer.bg-dark .border-secondary {
   border: 1px solid var(--primary-color) !important;
   border-radius: 6px;
   transition: all var(--transition-speed) ease !important;
+}
+
+.btn-subscribe-lg {
+  height: 48px !important;
+  min-height: 48px !important;
 }
 
 .btn-subscribe:hover,
@@ -690,7 +709,7 @@ footer.bg-dark .border-secondary {
 
 .pricing-popular-badge {
   position: absolute;
-  top: -3rem !important; /* Counteract the p-5 card top padding */
+  top: -2.2rem !important; /* Counteract the p-5 card top padding and center on border */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
