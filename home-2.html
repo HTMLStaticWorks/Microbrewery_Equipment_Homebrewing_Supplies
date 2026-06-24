@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore advanced homebrewing technologies and equipment setups. Learn the four steps of professional mashing, boiling, and fermentation.">
+  <meta name="description"
+    content="Explore advanced homebrewing technologies and equipment setups. Learn the four steps of professional mashing, boiling, and fermentation.">
   <title>Premium Home - Microbrewery Equipment & Homebrewing Supplies</title>
-  
+
   <!-- Bootstrap 5 CSS CDN -->
-  <link id="bootstrapCSS" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link id="bootstrapCSS" rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  
+
   <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link id="darkThemeCSS" rel="stylesheet" href="assets/css/dark-mode.css">
   <link id="rtlCSS" rel="stylesheet" href="assets/css/rtl.css" disabled>
   <link rel="icon" type="image/png" href="assets/images/favicon.png?v=1">
 </head>
+
 <body>
 
   <!-- Header (Navbar) -->
@@ -29,7 +33,8 @@
         </a>
 
         <!-- Hamburger toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -45,13 +50,13 @@
               <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
               <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-              
+
               <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
               <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-              
+
               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-            
+
             <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0 flex-nowrap">
               <button id="themeToggle" class="toggle-btn" aria-label="Toggle Dark Mode">
                 <i class="bi bi-moon-fill" aria-hidden="true"></i>
@@ -78,7 +83,8 @@
           <!-- Text column -->
           <div class="col-lg-6">
             <h1 id="hero2-heading" class="mb-4">Engineered for Flawless Brews</h1>
-            <p class="lead mb-4">Take full control of gravity, temperature, and carbonation. We build premium microbrewery setups that let you focus strictly on flavor design and execution.</p>
+            <p class="lead mb-4">Take full control of gravity, temperature, and carbonation. We build premium
+              microbrewery setups that let you focus strictly on flavor design and execution.</p>
             <div class="d-flex gap-3 flex-wrap">
               <a href="gallery.html" class="btn-custom btn-custom-primary">Showcase Gallery</a>
               <a href="about.html" class="btn-custom btn-custom-outline">Learn Our Origin</a>
@@ -87,8 +93,15 @@
           <!-- Image Column -->
           <div class="col-lg-6">
             <div class="position-relative overflow-hidden rounded-3 shadow-lg">
-              <img src="assets/images/inner-hero-bg.webp" alt="BrewCraft Premium Setup" class="img-fluid w-100 object-fit-cover animate-hover-zoom" style="height: 450px; border-radius: 6px;">
-              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-dark bg-opacity-75 text-white" style="backdrop-filter: blur(4px);">
+              <!-- Floating premium glass badge -->
+              <div class="position-absolute top-0 end-0 m-3 z-3 glass-badge animate-hover-float">
+                <i class="bi bi-thermometer-half text-primary fs-5"></i>
+                <span>99.8% Temp Accuracy</span>
+              </div>
+              <img src="assets/images/inner-hero-bg.webp" alt="BrewCraft Premium Setup"
+                class="img-fluid w-100 object-fit-cover animate-hover-zoom hero-2-img">
+              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-dark bg-opacity-75 text-white"
+                style="backdrop-filter: blur(4px);">
                 <h4 class="mb-1 text-white">Pro-Series Brewhouse Setup</h4>
                 <p class="small mb-0 text-white-50">Custom temperature manifolds & 304 Stainless Steel standards.</p>
               </div>
@@ -107,15 +120,16 @@
         </div>
         <div class="row g-4 justify-content-center">
           <!-- Step 1 -->
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 timeline-step">
             <div class="card-custom p-4 text-center">
               <div class="fs-2 text-primary mb-3">01</div>
               <h3 class="fs-4 mb-2">Mashing</h3>
-              <p class="small">Extracting natural sugars from malted barley under strictly monitored heat parameters.</p>
+              <p class="small">Extracting natural sugars from malted barley under strictly monitored heat parameters.
+              </p>
             </div>
           </div>
           <!-- Step 2 -->
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 timeline-step">
             <div class="card-custom p-4 text-center">
               <div class="fs-2 text-secondary mb-3">02</div>
               <h3 class="fs-4 mb-2">Boiling</h3>
@@ -123,7 +137,7 @@
             </div>
           </div>
           <!-- Step 3 -->
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 timeline-step">
             <div class="card-custom p-4 text-center">
               <div class="fs-2 text-primary mb-3">03</div>
               <h3 class="fs-4 mb-2">Fermenting</h3>
@@ -151,9 +165,9 @@
         </div>
         <div class="row g-4">
           <!-- Product Card 1 -->
-          <div class="col-md-4">
-            <div class="card-custom">
-              <img src="assets/images/mosaic-hops.webp" alt="Mosaic Hop Pellets" class="card-custom-img">
+          <div class="col-md-6 col-lg-4">
+            <div class="card-premium">
+              <img src="assets/images/mosaic-hops.webp" alt="Mosaic Hop Pellets" class="card-premium-img">
               <div class="badge bg-success mb-3">Freshly Arrived</div>
               <h3 class="mb-2">Mosaic Hop Pellets</h3>
               <p>1lb Nitrogen-flushed package with high alpha-acid values for tropical notes.</p>
@@ -163,9 +177,9 @@
             </div>
           </div>
           <!-- Product Card 2 -->
-          <div class="col-md-4">
-            <div class="card-custom">
-              <img src="assets/images/barley-malt.webp" alt="Brewmaster Pilsner Kit" class="card-custom-img">
+          <div class="col-md-6 col-lg-4">
+            <div class="card-premium">
+              <img src="assets/images/barley-malt.webp" alt="Brewmaster Pilsner Kit" class="card-premium-img">
               <div class="badge bg-success mb-3">New Batch</div>
               <h3 class="mb-2">Brewmaster Pilsner Kit</h3>
               <p>Malt grain recipe pack modeled on German pilsner tradition with Saaz hops.</p>
@@ -175,14 +189,89 @@
             </div>
           </div>
           <!-- Product Card 3 -->
-          <div class="col-md-4">
-            <div class="card-custom">
-              <img src="assets/images/homebrew-setup.webp" alt="Dual-Coil Wort Chiller" class="card-custom-img">
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <div class="card-premium" style="border-top-color: var(--primary-color) !important;">
+              <img src="assets/images/homebrew-setup.webp" alt="Dual-Coil Wort Chiller" class="card-premium-img">
               <div class="badge bg-warning text-dark mb-3">Limited stock</div>
               <h3 class="mb-2">Dual-Coil Wort Chiller</h3>
-              <p>Copper immersion chiller that drops wort temperatures down to yeast pitching levels under 10 minutes.</p>
+              <p>Copper immersion chiller that drops wort temperatures down to yeast pitching levels under 10 minutes.
+              </p>
               <div class="card-custom-cta">
                 <a href="contact.html" class="btn-custom btn-custom-secondary w-100">View Chiller</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Precision Tools (Section 4) -->
+    <section class="py-5 bg-light-subtle" aria-labelledby="calc-section-heading">
+      <div class="container">
+        <!-- Spanning header at the top -->
+        <div class="mb-5 text-center">
+          <span class="text-primary small fw-bold mb-2 d-block text-uppercase">Precision Engineering</span>
+          <h2 id="calc-section-heading" class="mb-0">Gravity & Attenuation Control</h2>
+        </div>
+        <div class="row align-items-center g-5">
+          <!-- Left Column: Details -->
+          <div class="col-lg-5">
+            <p class="lead mb-4">Consistency in craft beer requires mathematical control over sugars and fermentation progress. Our equipment is built to minimize sugar loss and maximize attenuation accuracy.</p>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-start gap-3">
+                <div class="bg-primary bg-opacity-10 text-primary p-2 rounded-circle">
+                  <i class="bi bi-gear-fill fs-5"></i>
+                </div>
+                <div>
+                  <h4 class="fs-5 fw-bold mb-1">Density Analytics</h4>
+                  <p class="small text-muted mb-0">Monitor Original Gravity (OG) to Final Gravity (FG) to calculate precise Alcohol by Volume (ABV) ratios.</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="bg-secondary bg-opacity-10 text-secondary p-2 rounded-circle">
+                  <i class="bi bi-shield-check fs-5"></i>
+                </div>
+                <div>
+                  <h4 class="fs-5 fw-bold mb-1">Sanitary Gasket Seals</h4>
+                  <p class="small text-muted mb-0">Airtight environments keep gravity curves stable and prevent oxidation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Interactive Calculator -->
+          <div class="col-lg-7">
+            <div class="brew-calc-card-large">
+              <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                  <h3 class="fs-4 mb-3"><i class="bi bi-calculator text-primary"></i> Brew Calculator</h3>
+                  <p class="small text-muted mb-4">Input gravity numbers below to calculate alcohol levels and apparent attenuation percentage.</p>
+                  <div class="mb-3">
+                    <label for="calc-og" class="form-label small fw-bold mb-1">Original Gravity (OG)</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-water text-primary"></i></span>
+                      <input type="number" step="0.001" class="form-control border-start-0 text-dark bg-white" id="calc-og" value="1.050" min="1.000" max="1.150">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="calc-fg" class="form-label small fw-bold mb-1">Final Gravity (FG)</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-water text-success"></i></span>
+                      <input type="number" step="0.001" class="form-control border-start-0 text-dark bg-white" id="calc-fg" value="1.010" min="1.000" max="1.150">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="bg-light-subtle p-4 rounded-3 border d-flex flex-column gap-3">
+                    <div class="text-center py-2 border-bottom">
+                      <span class="text-muted small d-block">Estimated Alcohol By Volume</span>
+                      <span class="display-6 fw-bold text-primary" id="calc-abv-result">5.25%</span>
+                    </div>
+                    <div class="text-center py-2">
+                      <span class="text-muted small d-block">Apparent Attenuation</span>
+                      <span class="display-6 fw-bold text-success" id="calc-atten-result">80%</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -193,10 +282,12 @@
     <!-- Homebrew Community Blog Preview Feed (Section 4) -->
     <section class="py-5 bg-light-subtle" aria-labelledby="blog-heading">
       <div class="container">
-        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mb-5 text-center text-sm-start">
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between align-items-center mb-5 text-center text-sm-start">
           <div>
             <h2 id="blog-heading" class="mb-2">Brewer's Diary</h2>
-            <p class="text-muted mb-0">Community stories, equipment setups, and detailed fermentation science guides.</p>
+            <p class="text-muted mb-0">Community stories, equipment setups, and detailed fermentation science guides.
+            </p>
           </div>
           <a href="blog.html" class="btn-custom btn-custom-outline mt-3 mt-sm-0">Browse All Articles</a>
         </div>
@@ -206,7 +297,8 @@
               <img src="assets/images/yeast-culture.webp" alt="Belgian Ales" class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">FERMENTATION SCIENCE</span>
               <h3 class="fs-4 mb-2">Controlling Esters in Belgian Ales</h3>
-              <p class="small text-muted">How pitching yeast 2 degrees cooler shapes the banana and clove aromatic profile of your ales.</p>
+              <p class="small text-muted">How pitching yeast 2 degrees cooler shapes the banana and clove aromatic
+                profile of your ales.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Article</a>
               </div>
@@ -217,7 +309,8 @@
               <img src="assets/images/brewhouse-vessel.webp" alt="Stainless vs Plastic" class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">EQUIPMENT REVIEW</span>
               <h3 class="fs-4 mb-2">Stainless Steel vs Plastic Fermenters</h3>
-              <p class="small text-muted">A clear, objective breakdown comparing sanitary properties, scratch protection, and longevity.</p>
+              <p class="small text-muted">A clear, objective breakdown comparing sanitary properties, scratch
+                protection, and longevity.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Article</a>
               </div>
@@ -227,10 +320,162 @@
             <div class="card-custom">
               <img src="assets/images/glycol-system.webp" alt="Scale Up Recipes" class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">COMMUNITY TIPS</span>
-              <h3 class="fs-4 mb-2">Scale Up Recipes to 1 Barrel</h3>
-              <p class="small text-muted">Adjusting hop utilization rates and grain grist percentage yields for commercial scaling.</p>
+              <h3 class="fs-4 mb-2">Scale Up Recipes to<br>1 Barrel</h3>
+              <p class="small text-muted">Adjusting hop utilization rates and grain grist percentage yields for<br>commercial scaling.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Article</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- High-Performance Standards (Section 6) -->
+    <section class="py-5" aria-labelledby="standards-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="text-primary small fw-bold mb-2 d-block text-uppercase">Industrial Grade Quality</span>
+          <h2 id="standards-heading" class="mb-3">BrewCraft Quality Metrics</h2>
+          <p class="text-muted">Every vessel and controller board is tested to meet strict commercial parameters.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Metric 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="metric-card text-center">
+              <div class="metric-value">500+</div>
+              <div class="metric-title">Automated setups</div>
+              <p class="small text-muted mb-0">Installed worldwide in microbreweries and professional labs.</p>
+            </div>
+          </div>
+          <!-- Metric 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="metric-card text-center">
+              <div class="metric-value">99.8%</div>
+              <div class="metric-title">Thermal Stability</div>
+              <p class="small text-muted mb-0">Maximum temperature variation under double-jacketed glycol coolant paths.</p>
+            </div>
+          </div>
+          <!-- Metric 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="metric-card text-center">
+              <div class="metric-value">304</div>
+              <div class="metric-title">Sanitary Stainless</div>
+              <p class="small text-muted mb-0">High-grade food safe steel surfaces verified for scratch protection and cleaning.</p>
+            </div>
+          </div>
+          <!-- Metric 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="metric-card text-center">
+              <div class="metric-value">0.05</div>
+              <div class="metric-title">Gravity Accuracy</div>
+              <p class="small text-muted mb-0">Precision hydrometer measurements tracked automatically by PLC boards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Showcase (Section 7) -->
+    <section class="py-5 bg-light-subtle" aria-labelledby="testimonials-2-heading">
+      <div class="container">
+        <!-- Spanning header at the top -->
+        <div class="mb-5 text-center">
+          <span class="text-primary small fw-bold mb-2 d-block text-uppercase">Professional Trust</span>
+          <h2 id="testimonials-2-heading" class="mb-3">Brewer Feedback</h2>
+          <p class="text-muted mx-auto mb-4" style="max-width: 600px;">Master brewers, engineering consultants, and quality controllers around the globe depend on BrewCraft's temperature and gravity components.</p>
+          <a href="about.html" class="btn-custom btn-custom-outline">Read All Stories</a>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Testimonial list -->
+          <div class="col-lg-8">
+            <div class="d-flex flex-column gap-4">
+              <!-- Review 1 -->
+              <div class="card-custom p-4 text-start align-items-start">
+                <div class="d-flex align-items-center gap-3 mb-3 w-100">
+                  <img src="assets/images/team-2.webp" alt="Elena Rostova" class="rounded-circle"
+                    style="width: 54px; height: 54px; object-fit: cover;">
+                  <div>
+                    <h4 class="fs-5 mb-0 fw-bold">Dr. Elena Rostova</h4>
+                    <small class="text-muted">Brewery Consultant, Munich Tech</small>
+                  </div>
+                  <div class="text-warning fs-6 ms-auto">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fst-italic small mb-0">"BrewCraft's digital manifolds and steam valves are the gold standard for pilot system setups. The heat transfer efficiency is unmatched and consistency is spot on."</p>
+              </div>
+              <!-- Review 2 -->
+              <div class="card-custom p-4 text-start align-items-start">
+                <div class="d-flex align-items-center gap-3 mb-3 w-100">
+                  <img src="assets/images/team-1.webp" alt="Tyler Vance" class="rounded-circle"
+                    style="width: 54px; height: 54px; object-fit: cover;">
+                  <div>
+                    <h4 class="fs-5 mb-0 fw-bold">Tyler Vance</h4>
+                    <small class="text-muted">Founder, Apex Brewing Co.</small>
+                  </div>
+                  <div class="text-warning fs-6 ms-auto">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fst-italic small mb-0">"We scaled our flagship IPA from a 1-barrel experimental kit to a 15-barrel commercial system using BrewCraft's grist calculations. Flawless execution every single time."</p>
+              </div>
+              <!-- Review 3 -->
+              <div class="card-custom p-4 text-start align-items-start">
+                <div class="d-flex align-items-center gap-3 mb-3 w-100">
+                  <img src="assets/images/team-3.webp" alt="Aris Thorne" class="rounded-circle"
+                    style="width: 54px; height: 54px; object-fit: cover;">
+                  <div>
+                    <h4 class="fs-5 mb-0 fw-bold">Dr. Aris Thorne</h4>
+                    <small class="text-muted">Yeast Genetics Lab, BioBrew</small>
+                  </div>
+                  <div class="text-warning fs-6 ms-auto">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fst-italic small mb-0">"The jacketed conical fermenters maintain temperature stability to within 0.1°C. This level of precision is critical for our yeast isolation trials."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (Section 8) -->
+    <section class="py-5" aria-labelledby="faq-2-heading">
+      <div class="container">
+        <!-- Spanning header at the top -->
+        <div class="mb-5 text-center">
+          <span class="text-primary small fw-bold mb-2 d-block text-uppercase">Help & Support</span>
+          <h2 id="faq-2-heading" class="mb-0">Frequently Asked Questions</h2>
+        </div>
+        <div class="row justify-content-center">
+          <!-- FAQ Cards Stack -->
+          <div class="col-lg-8">
+            <div class="d-flex flex-column gap-3">
+              <!-- Item 1 -->
+              <div class="faq-card text-start align-items-start">
+                <h4 class="fs-5 fw-bold text-primary mb-2">
+                  <i class="bi bi-question-circle-fill text-primary"></i> How do I choose the correct fermenter size?
+                </h4>
+                <p class="small text-muted mb-0">Select a vessel that leaves at least 20% headspace above your standard batch size. A 7-gallon conical fermenter is ideal for active 5-gallon wort fermentations to avoid krausen blowoff.</p>
+              </div>
+              <!-- Item 2 -->
+              <div class="faq-card text-start align-items-start">
+                <h4 class="fs-5 fw-bold text-primary mb-2">
+                  <i class="bi bi-question-circle-fill text-primary"></i> What is the advantage of glycol jacketing?
+                </h4>
+                <p class="small text-muted mb-0">Glycol jackets circulate cold coolant through double-wall stainless steel layers. This allows you to regulate fermentation temperatures to within 0.5 degrees, eliminating off-flavors.</p>
+              </div>
+              <!-- Item 3 -->
+              <div class="faq-card text-start align-items-start">
+                <h4 class="fs-5 fw-bold text-primary mb-2">
+                  <i class="bi bi-question-circle-fill text-primary"></i> Can I automate my step-mashing schedules?
+                </h4>
+                <p class="small text-muted mb-0">Yes, our Pro-Series Digital Brew Controllers automate heating elements to execute steps (acid rests, protein rests, saccharification) according to user-programmed timings.</p>
               </div>
             </div>
           </div>
@@ -244,18 +489,20 @@
         <div class="row align-items-center g-4">
           <div class="col-lg-6 text-center text-lg-start">
             <h2 id="inline-sub-heading" class="text-white mb-2 fs-1">Stay updated with BrewCraft</h2>
-            <p class="mb-0 text-white-50">Be the first to learn about seasonal ingredient releases and custom brewing manifolds.</p>
+            <p class="mb-0 text-white-50">Be the first to learn about seasonal ingredient releases and custom brewing
+              manifolds.</p>
           </div>
           <div class="col-lg-6">
             <form class="needs-validation d-flex flex-column flex-sm-row gap-2" novalidate>
               <div class="position-relative flex-grow-1 text-start">
                 <label for="subscribeEmail2" class="visually-hidden">Email Address</label>
-                <input type="email" class="form-control form-control-lg border-0 text-dark bg-white" id="subscribeEmail2" placeholder="Enter your email Address" required>
+                <input type="email" class="form-control form-control-lg border-0 text-dark bg-white subscribe-input"
+                  id="subscribeEmail2" placeholder="Enter your email Address" required>
                 <div class="invalid-tooltip-custom">
                   Please enter a valid email address.
                 </div>
               </div>
-              <button class="btn-custom btn-custom-secondary border-0 py-3" type="submit">Subscribe</button>
+              <button class="btn-custom btn-custom-secondary btn-subscribe" type="submit">Subscribe</button>
             </form>
           </div>
         </div>
@@ -266,48 +513,68 @@
   <!-- Footer -->
   <footer class="bg-dark text-light pt-5 pb-3" aria-label="Footer Navigation">
     <div class="container">
-      <div class="row g-4 mb-4">
-        <div class="col-lg-4 text-center text-lg-start">
+      <div class="row g-4 mb-4 justify-content-between">
+        <!-- Column 1: Logo & Motto -->
+        <div class="col-md-6 col-lg-3 text-center text-md-start">
           <a class="d-inline-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.html">
             <img src="assets/images/logo.svg" alt="BrewCraft Logo" width="40" height="40">
             <span class="fs-4 fw-bold text-white brand-text">BrewCraft</span>
           </a>
-          <p class="text-light-emphasis">Empowering craft breweries and homebrew enthusiasts with superior ingredients and industry-standard brewing machinery.</p>
-          <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
+          <p class="text-light-emphasis mb-3">Empowering craft breweries and homebrew enthusiasts with superior
+            ingredients and industry-standard brewing machinery.</p>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start">
             <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="text-white fs-4" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
-        
-        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-sm-6 col-md-3 col-lg-2 text-center text-md-start">
           <h5 class="text-white mb-3">Quick Links</h5>
           <ul class="list-unstyled d-flex flex-column gap-2">
             <li><a href="index.html" class="text-light-emphasis text-decoration-none">Home Standard</a></li>
             <li><a href="home-2.html" class="text-light-emphasis text-decoration-none">Home Premium</a></li>
             <li><a href="about.html" class="text-light-emphasis text-decoration-none">Our Story</a></li>
             <li><a href="services.html" class="text-light-emphasis text-decoration-none">Brewing Solutions</a></li>
-            
           </ul>
         </div>
 
-        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+        <!-- Column 3: Resources -->
+        <div class="col-sm-6 col-md-3 col-lg-2 text-center text-md-start">
           <h5 class="text-white mb-3">Resources</h5>
           <ul class="list-unstyled d-flex flex-column gap-2">
             <li><a href="blog.html" class="text-light-emphasis text-decoration-none">Community Blog</a></li>
             <li><a href="gallery.html" class="text-light-emphasis text-decoration-none">Equipment Gallery</a></li>
-            
             <li><a href="contact.html" class="text-light-emphasis text-decoration-none">Get In Touch</a></li>
             <li><a href="coming-soon.html" class="text-light-emphasis text-decoration-none">Upcoming Gear</a></li>
           </ul>
+        </div>
+
+
+        <!-- Column 5: Newsletter -->
+        <div class="col-md-6 col-lg-3 text-center text-md-start">
+          <h5 class="text-white mb-3">Newsletter</h5>
+          <p class="text-light-emphasis small mb-3">Subscribe for recipe sheets and equipment updates.</p>
+          <form class="needs-validation" novalidate>
+            <div class="input-group mb-2">
+              <input type="email" class="form-control bg-transparent subscribe-input"
+                placeholder="Your email address" aria-label="Your email address" required>
+              <button class="btn btn-custom btn-custom-primary btn-subscribe" type="submit">
+                <i class="bi bi-send"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
 
       <hr class="border-secondary">
 
+      <!-- Bottom Bar -->
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-        <p class="mb-0 text-light-emphasis text-center text-md-start">&copy; 2026 BrewCraft Inc. All rights reserved.</p>
+        <p class="mb-0 text-light-emphasis text-center text-md-start">&copy; 2026 BrewCraft Inc. All rights reserved.
+        </p>
         <div class="d-flex gap-4">
           <a href="#" class="text-light-emphasis text-decoration-none">Privacy Policy</a>
           <a href="#" class="text-light-emphasis text-decoration-none">Terms of Service</a>
@@ -324,4 +591,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

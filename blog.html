@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore BrewCraft community recipes, yeast science blogs, and pricing plans for amateur and commercial setups.">
+  <meta name="description"
+    content="Explore BrewCraft community recipes, yeast science blogs, and pricing plans for amateur and commercial setups.">
   <title>Blog & Pricing - BrewCraft</title>
-  
+
   <!-- Bootstrap 5 CSS CDN -->
-  <link id="bootstrapCSS" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link id="bootstrapCSS" rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  
+
   <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link id="darkThemeCSS" rel="stylesheet" href="assets/css/dark-mode.css">
   <link id="rtlCSS" rel="stylesheet" href="assets/css/rtl.css" disabled>
   <link rel="icon" type="image/png" href="assets/images/favicon.png?v=1">
 </head>
+
 <body>
 
   <!-- Header (Navbar) -->
@@ -29,7 +33,8 @@
         </a>
 
         <!-- Hamburger toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -49,7 +54,7 @@
               <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-            
+
             <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0 flex-nowrap">
               <button id="themeToggle" class="toggle-btn" aria-label="Toggle Dark Mode">
                 <i class="bi bi-moon-fill" aria-hidden="true"></i>
@@ -70,10 +75,13 @@
 
   <main>
     <!-- Inner Hero -->
-    <section class="inner-hero py-5 text-center bg-secondary" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/inner-hero-bg.webp');" aria-labelledby="blog-hero-title">
+    <section class="inner-hero py-5 text-center bg-secondary"
+      style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/inner-hero-bg.webp');"
+      aria-labelledby="blog-hero-title">
       <div class="container py-4">
         <h1 id="blog-hero-title" class="text-white mb-3">BrewCraft Hub: Blog & Plans</h1>
-        <p class="lead text-light max-width-md mx-auto">Explore professional recipe formulations, yeast sciences, and hardware subscription plans in one spot.</p>
+        <p class="lead text-light max-width-md mx-auto">Explore professional recipe formulations, yeast sciences, and
+          hardware subscription plans in one spot.</p>
       </div>
     </section>
 
@@ -84,15 +92,15 @@
           <h2 class="mb-3">Brewery & Hobby Packages</h2>
           <p class="text-muted">High-grade setups scaled for all levels of craft production.</p>
         </div>
-        <div class="row g-4 align-items-stretch mb-5">
-          
+        <div class="row g-4 align-items-stretch mb-5 justify-content-center">
+
           <!-- Plan 1 -->
-          <div class="col-lg-4">
-            <div class="card-custom border-secondary-subtle">
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom pricing-card border-secondary-subtle p-5 bg-light-subtle shadow-sm h-100">
               <h3 class="mb-2">Starter Kit</h3>
               <p class="text-muted">Perfect for apartment homebrewers.</p>
               <div class="fs-1 fw-bold text-dark my-3">$299</div>
-              <ul class="list-unstyled my-4 text-start w-100 d-flex flex-column gap-2">
+              <ul class="list-unstyled my-4 text-center w-100 d-flex flex-column gap-2">
                 <li><i class="bi bi-check2 text-success"></i> 5-Gallon Glass Carboy</li>
                 <li><i class="bi bi-check2 text-success"></i> Basic 8-Gal Kettle</li>
                 <li><i class="bi bi-check2 text-success"></i> Immersion Wort Chiller</li>
@@ -104,13 +112,14 @@
           </div>
 
           <!-- Plan 2: Highlighted Popular Plan -->
-          <div class="col-lg-4">
-            <div class="card-custom border-primary p-5 bg-light-subtle shadow" style="transform: scale(1.02); z-index: 2;">
-              <span class="badge bg-primary text-white mb-3 px-3 py-2">MOST POPULAR</span>
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom pricing-card border-primary p-5 bg-light-subtle shadow h-100"
+              style="transform: scale(1.02); z-index: 2;">
+              <span class="badge bg-primary text-white px-3 py-2 pricing-popular-badge">MOST POPULAR</span>
               <h3 class="mb-2 text-primary">Pro Brewmaster</h3>
               <p class="text-muted">Advanced temperature and gravity control.</p>
               <div class="fs-1 fw-bold text-primary my-3">$1,499</div>
-              <ul class="list-unstyled my-4 text-start w-100 d-flex flex-column gap-2">
+              <ul class="list-unstyled my-4 text-center w-100 d-flex flex-column gap-2">
                 <li><i class="bi bi-check2 text-success"></i> 15-Gallon jacketed Conical</li>
                 <li><i class="bi bi-check2 text-success"></i> Triple-clamp valve manifold</li>
                 <li><i class="bi bi-check2 text-success"></i> Dual-stage temperature controller</li>
@@ -122,12 +131,12 @@
           </div>
 
           <!-- Plan 3 -->
-          <div class="col-lg-4">
-            <div class="card-custom border-secondary-subtle">
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom pricing-card border-secondary-subtle p-5 bg-light-subtle shadow-sm h-100">
               <h3 class="mb-2">Commercial Craft</h3>
               <p class="text-muted">Scaled hardware for brewpubs & bars.</p>
               <div class="fs-1 fw-bold text-dark my-3">$9,999</div>
-              <ul class="list-unstyled my-4 text-start w-100 d-flex flex-column gap-2">
+              <ul class="list-unstyled my-4 text-center w-100 d-flex flex-column gap-2">
                 <li><i class="bi bi-check2 text-success"></i> 3-Barrel Brewhouse setup</li>
                 <li><i class="bi bi-check2 text-success"></i> Dual glycol chillers & pumps</li>
                 <li><i class="bi bi-check2 text-success"></i> Automated PLC touch screen</li>
@@ -149,7 +158,7 @@
           <h2 class="mb-3">Brewmasters Community Feed</h2>
           <p class="text-muted">Read scientific guides and recipe profiles curated by Thomas Kray and team.</p>
         </div>
-        
+
         <!-- Category Filters -->
         <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
           <button class="btn-custom btn-custom-primary py-2 px-4 fs-6">All Posts</button>
@@ -157,38 +166,41 @@
           <button class="btn-custom btn-custom-outline py-2 px-4 fs-6">Equipment Guides</button>
         </div>
 
-        <div class="row g-4 mb-5">
+        <div class="row g-4 mb-5 justify-content-center">
           <!-- Post 1 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card-custom">
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom h-100">
               <img src="assets/images/yeast-culture.webp" alt="Dry vs Liquid Yeast" class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">YEAST SCIENCE</span>
               <h3 class="fs-4 mb-2">Dry vs Liquid Yeast Pitches</h3>
-              <p class="small text-muted">A biological analysis of cell count density, shelf life preservation, and yeast starters.</p>
+              <p class="small text-muted">A biological analysis of cell count density, shelf life preservation, and
+                yeast starters.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Post</a>
               </div>
             </div>
           </div>
           <!-- Post 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card-custom">
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom h-100">
               <img src="assets/images/brewery-valves.webp" alt="Cleaning Kettles with PBW" class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">EQUIPMENT GUIDES</span>
               <h3 class="fs-4 mb-2">Cleaning Kettles with PBW</h3>
-              <p class="small text-muted">How to safely dissolve organic scale, beerstone, and dry hop residues without etching metals.</p>
+              <p class="small text-muted">How to safely dissolve organic scale, beerstone, and dry hop residues without
+                etching metals.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Post</a>
               </div>
             </div>
           </div>
           <!-- Post 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card-custom">
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom h-100">
               <img src="assets/images/stout.webp" alt="Mashing Oats for Creamy Stouts" class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">RECIPES</span>
               <h3 class="fs-4 mb-2">Mashing Oats for Creamy Stouts</h3>
-              <p class="small text-muted">How beta-glucans and flaked oatmeal enhance viscosity and build a dense, velvety head.</p>
+              <p class="small text-muted">How beta-glucans and flaked oatmeal enhance viscosity and build a dense,
+                velvety head.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Post</a>
               </div>
@@ -203,40 +215,45 @@
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="mb-3">Client Success Stories</h2>
-          <p class="text-muted">See how commercial operations scaled their production and efficiency using BrewCraft components.</p>
+          <p class="text-muted">See how commercial operations scaled their production and efficiency using BrewCraft
+            components.</p>
         </div>
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
           <!-- Case 1 -->
-          <div class="col-md-4">
-            <div class="card-custom">
-              <img src="assets/images/brewhouse-vessel.webp" alt="Lone Eagle Brewhouse Expansion" class="card-custom-img">
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom h-100">
+              <img src="assets/images/brewhouse-vessel.webp" alt="Lone Eagle Brewhouse Expansion"
+                class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">BREWHOUSE UPGRADES</span>
               <h3 class="fs-4 mb-2">Lone Eagle Scale-Up</h3>
-              <p class="small text-muted">How re-engineering hot liquor paths allowed a local brewery to scale from 3 BBL to 15 BBL production in under a year.</p>
+              <p class="small text-muted">How re-engineering hot liquor paths allowed a local brewery to scale from 3
+                BBL to 15 BBL production in under a year.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Case Study</a>
               </div>
             </div>
           </div>
           <!-- Case 2 -->
-          <div class="col-md-4">
-            <div class="card-custom">
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom h-100">
               <img src="assets/images/kegs-storage.webp" alt="Glycol Energy Efficiency" class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">ENERGY EFFICIENCY</span>
               <h3 class="fs-4 mb-2">Glycol Pipe Insulation</h3>
-              <p class="small text-muted">A technical walkthrough of how foam insulation on secondary glycol runs reduced chilling costs by 22%.</p>
+              <p class="small text-muted">A technical walkthrough of how foam insulation on secondary glycol runs
+                reduced chilling costs by 22%.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Case Study</a>
               </div>
             </div>
           </div>
           <!-- Case 3 -->
-          <div class="col-md-4">
-            <div class="card-custom">
+          <div class="col-xl-4 col-md-6">
+            <div class="card-custom h-100">
               <img src="assets/images/canning-line.webp" alt="Consistent Canning Controls" class="card-custom-img">
               <span class="text-primary small fw-bold mb-2">QUALITY CONTROL</span>
               <h3 class="fs-4 mb-2">Reducing Canning O2</h3>
-              <p class="small text-muted">Implementing automated inline CO2 gas purging sensors to significantly lower dissolved oxygen pickup during canning runs.</p>
+              <p class="small text-muted">Implementing automated inline CO2 gas purging sensors to significantly lower
+                dissolved oxygen pickup during canning runs.</p>
               <div class="card-custom-cta">
                 <a href="blog-details.html" class="btn-custom btn-custom-outline w-100">Read Case Study</a>
               </div>
@@ -250,22 +267,25 @@
   <!-- Footer -->
   <footer class="bg-dark text-light pt-5 pb-3" aria-label="Footer Navigation">
     <div class="container">
-      <div class="row g-4 mb-4">
-        <div class="col-lg-4 text-center text-lg-start">
+      <div class="row g-4 mb-4 justify-content-between">
+        <!-- Column 1: Logo & Motto -->
+        <div class="col-md-6 col-lg-3 text-center text-md-start">
           <a class="d-inline-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.html">
             <img src="assets/images/logo.svg" alt="BrewCraft Logo" width="40" height="40">
             <span class="fs-4 fw-bold text-white brand-text">BrewCraft</span>
           </a>
-          <p class="text-light-emphasis">Empowering craft breweries and homebrew enthusiasts with superior ingredients and industry-standard brewing machinery.</p>
-          <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
+          <p class="text-light-emphasis mb-3">Empowering craft breweries and homebrew enthusiasts with superior
+            ingredients and industry-standard brewing machinery.</p>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start">
             <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="text-white fs-4" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" class="text-white fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
-        
-        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-sm-6 col-md-3 col-lg-2 text-center text-md-start">
           <h5 class="text-white mb-3">Quick Links</h5>
           <ul class="list-unstyled d-flex flex-column gap-2">
             <li><a href="index.html" class="text-light-emphasis text-decoration-none">Home Standard</a></li>
@@ -275,7 +295,8 @@
           </ul>
         </div>
 
-        <div class="col-sm-6 col-lg-4 text-center text-md-start">
+        <!-- Column 3: Resources -->
+        <div class="col-sm-6 col-md-3 col-lg-2 text-center text-md-start">
           <h5 class="text-white mb-3">Resources</h5>
           <ul class="list-unstyled d-flex flex-column gap-2">
             <li><a href="blog.html" class="text-light-emphasis text-decoration-none">Community Blog</a></li>
@@ -284,12 +305,30 @@
             <li><a href="coming-soon.html" class="text-light-emphasis text-decoration-none">Upcoming Gear</a></li>
           </ul>
         </div>
+
+
+        <!-- Column 5: Newsletter -->
+        <div class="col-md-6 col-lg-3 text-center text-md-start">
+          <h5 class="text-white mb-3">Newsletter</h5>
+          <p class="text-light-emphasis small mb-3">Subscribe for recipe sheets and equipment updates.</p>
+          <form class="needs-validation" novalidate>
+            <div class="input-group mb-2">
+              <input type="email" class="form-control bg-transparent subscribe-input"
+                placeholder="Your email address" aria-label="Your email address" required>
+              <button class="btn btn-custom btn-custom-primary btn-subscribe" type="submit">
+                <i class="bi bi-send"></i>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
 
       <hr class="border-secondary">
 
+      <!-- Bottom Bar -->
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-        <p class="mb-0 text-light-emphasis text-center text-md-start">&copy; 2026 BrewCraft Inc. All rights reserved.</p>
+        <p class="mb-0 text-light-emphasis text-center text-md-start">&copy; 2026 BrewCraft Inc. All rights reserved.
+        </p>
         <div class="d-flex gap-4">
           <a href="#" class="text-light-emphasis text-decoration-none">Privacy Policy</a>
           <a href="#" class="text-light-emphasis text-decoration-none">Terms of Service</a>
@@ -306,4 +345,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

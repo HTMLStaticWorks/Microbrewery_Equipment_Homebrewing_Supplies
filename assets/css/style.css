@@ -5,17 +5,19 @@
 }
 
 :root {
-  --primary-color: #D97706; /* Amber Beer / Copper */
+  --primary-color: #D97706;
+  /* Amber Beer / Copper */
   --primary-rgb: 217, 119, 6;
-  --secondary-color: #065F46; /* Hops Forest Green */
+  --secondary-color: #065F46;
+  /* Hops Forest Green */
   --secondary-rgb: 6, 95, 70;
-  
+
   --bg-primary: #FFFFFF;
   --bg-secondary: #F3F4F6;
   --text-primary: #111827;
   --text-secondary: #4B5563;
   --border-color: #E5E7EB;
-  
+
   --success-color: #059669;
   --warning-color: #D97706;
   --error-color: #DC2626;
@@ -42,27 +44,31 @@ body {
 }
 
 /* Typography Constraints */
-h1, .h1 {
+h1,
+.h1 {
   font-size: clamp(4.5rem, 8vw, 6rem);
   font-weight: 580;
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 540;
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 520;
   line-height: 1.3;
 }
 
-p, .body-text {
+p,
+.body-text {
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   font-weight: 420;
   color: var(--text-secondary);
@@ -181,6 +187,12 @@ p, .body-text {
   filter: var(--toggler-filter) !important;
 }
 
+@media (max-width: 1199.98px) {
+  .navbar-custom .navbar-nav .nav-link {
+    width: fit-content;
+  }
+}
+
 /* Footer overrides */
 footer.bg-dark {
   background-color: var(--nav-footer-bg) !important;
@@ -217,11 +229,15 @@ footer.bg-dark .border-secondary {
   color: var(--nav-footer-text) !important;
 }
 
-.navbar-brand, .toggle-btn, .nav-link, .btn-custom {
+.navbar-brand,
+.toggle-btn,
+.nav-link,
+.btn-custom {
   white-space: nowrap !important;
 }
 
-.offcanvas-body, .navbar-nav {
+.offcanvas-body,
+.navbar-nav {
   flex-wrap: nowrap !important;
 }
 
@@ -273,15 +289,18 @@ footer.bg-dark .border-secondary {
 .card-custom {
   background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
-  border-radius: 6px; /* Between 5px and 7px */
+  border-radius: 6px;
+  /* Between 5px and 7px */
   padding: 2rem;
-  text-align: center; /* Content perfectly centered */
+  text-align: center;
+  /* Content perfectly centered */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   height: 100%;
   position: relative;
+  overflow: hidden;
   transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
@@ -292,10 +311,16 @@ footer.bg-dark .border-secondary {
 
 .card-custom-img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 1.5;
   object-fit: cover;
-  border-radius: 6px;
   margin-bottom: 1.5rem;
+}
+
+.card-custom:not(.p-0) .card-custom-img {
+  width: calc(100% + 4rem);
+  margin-top: -2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
 .card-custom-body {
@@ -322,8 +347,13 @@ footer.bg-dark .border-secondary {
 }
 
 @keyframes skeleton-loading {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 /* Back to Top */
@@ -390,7 +420,7 @@ footer.bg-dark .border-secondary {
   z-index: 1;
 }
 
-.inner-hero > .container {
+.inner-hero>.container {
   position: relative;
   z-index: 2;
 }
@@ -411,7 +441,7 @@ footer.bg-dark .border-secondary {
   border-radius: .25rem;
 }
 
-.was-validated .form-control:invalid ~ .invalid-tooltip-custom {
+.was-validated .form-control:invalid~.invalid-tooltip-custom {
   display: block;
 }
 
@@ -443,7 +473,7 @@ footer.bg-dark .border-secondary {
   overflow: hidden;
 }
 
-.bubble-card > div:not(.bubble-container) {
+.bubble-card>div:not(.bubble-container) {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -479,12 +509,15 @@ footer.bg-dark .border-secondary {
     transform: translateY(0) scale(0.3);
     opacity: 0;
   }
+
   15% {
     opacity: 0.85;
   }
+
   85% {
     opacity: 0.85;
   }
+
   100% {
     transform: translateY(-420px) scale(1.1);
     opacity: 0;
@@ -499,3 +532,316 @@ footer.bg-dark .border-secondary {
   border-radius: 8px;
 }
 
+/* ==========================================
+   10. Newsletter & Subscribe Button Styling
+   ========================================== */
+.subscribe-input {
+  height: 40px !important;
+  border: 1px solid var(--nav-footer-border) !important;
+  border-radius: 6px;
+}
+
+.subscribe-input:not(.bg-transparent) {
+  background-color: #FFFFFF !important;
+  color: #111827 !important;
+}
+
+.subscribe-input:not(.bg-transparent)::placeholder {
+  color: #6B7280 !important;
+  opacity: 0.8;
+}
+
+.subscribe-input.bg-transparent {
+  background-color: transparent !important;
+  color: var(--nav-footer-text) !important;
+}
+
+.subscribe-input.bg-transparent::placeholder {
+  color: var(--nav-footer-text) !important;
+  opacity: 0.6;
+}
+
+.subscribe-input:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--primary-rgb), 0.25) !important;
+}
+
+.subscribe-input:not(.bg-transparent):focus {
+  background-color: #FFFFFF !important;
+  color: #111827 !important;
+}
+
+.subscribe-input.bg-transparent:focus {
+  background-color: transparent !important;
+  color: var(--nav-footer-text) !important;
+}
+
+.btn-subscribe {
+  height: 40px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border: 1px solid var(--primary-color) !important;
+  border-radius: 6px;
+  transition: all var(--transition-speed) ease !important;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: transparent !important;
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.2) !important;
+}
+
+.bg-primary .btn-subscribe:hover,
+.bg-primary .btn-subscribe:focus {
+  background-color: transparent !important;
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4) !important;
+}
+
+.bg-secondary .btn-subscribe:hover,
+.bg-secondary .btn-subscribe:focus {
+  background-color: transparent !important;
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4) !important;
+}
+
+.hero-2-img {
+  height: 450px;
+  border-radius: 6px;
+}
+
+/* ==========================================
+   11. Authentication Page Styling
+   ========================================== */
+.auth-card h1 {
+  font-size: 1.75rem !important; /* Smaller baseline */
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .auth-card h1 {
+    font-size: 1.5rem !important; /* Make heading smaller on desktop as requested */
+  }
+}
+
+/* ==========================================
+   12. Footer Styling (Mobile & Tablet Left Alignment)
+   ========================================== */
+@media (max-width: 991.98px) {
+  footer .text-center {
+    text-align: start !important;
+  }
+  footer .justify-content-center {
+    justify-content: flex-start !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  footer .d-flex.flex-column.align-items-center {
+    align-items: flex-start !important;
+  }
+
+  h1, .h1 {
+    font-size: 2.5rem !important;
+  }
+  h2, .h2 {
+    font-size: 2.0rem !important;
+  }
+  h3, .h3 {
+    font-size: 1.5rem !important;
+  }
+  .hero-2 {
+    padding: 3rem 0 !important;
+  }
+  .hero-2-img {
+    height: 250px !important;
+  }
+  .card-custom, .card-premium {
+    padding: 1rem !important;
+  }
+}
+
+/* ==========================================
+   13. Contact Page Social Links
+   ========================================== */
+.social-links a {
+  color: var(--text-secondary) !important;
+  transition: color var(--transition-speed) ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* ==========================================
+   14. Pricing Cards Custom Badges & Layout
+   ========================================== */
+.card-custom {
+  position: relative;
+}
+
+.pricing-card {
+  overflow: visible !important;
+}
+
+.pricing-popular-badge {
+  position: absolute;
+  top: -3rem !important; /* Counteract the p-5 card top padding */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.card-custom-cta {
+  margin-top: auto !important; /* Pushes the button to the bottom of the card */
+  width: 100%;
+}
+
+/* ==========================================
+   15. Home 2 Premium Redesign Extensions
+   ========================================== */
+.glass-badge {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  color: #111827;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+[data-theme="dark"] .glass-badge {
+  background: rgba(31, 41, 55, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #F9FAFB !important;
+}
+
+@media (min-width: 992px) {
+  .timeline-step {
+    position: relative;
+  }
+  .timeline-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: -15%;
+    width: 30%;
+    height: 2px;
+    border-top: 2px dashed var(--primary-color);
+    opacity: 0.4;
+    z-index: 1;
+  }
+  [dir="rtl"] .timeline-step:not(:last-child)::after {
+    right: auto;
+    left: -15%;
+  }
+}
+
+.metric-card {
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.03) 0%, rgba(var(--secondary-rgb), 0.03) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 2.5rem 1.5rem;
+  transition: all var(--transition-speed) ease;
+  height: 100%;
+}
+[data-theme="dark"] .metric-card {
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.06) 0%, rgba(var(--secondary-rgb), 0.06) 100%);
+}
+.metric-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 25px rgba(var(--primary-rgb), 0.15);
+}
+.metric-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.metric-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.brew-calc-card-large {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 3rem;
+  transition: border-color var(--transition-speed) ease;
+}
+[data-theme="dark"] .brew-calc-card-large {
+  background-color: var(--bg-secondary);
+}
+.brew-calc-card-large:hover {
+  border-color: var(--primary-color);
+}
+
+/* ==========================================
+   16. Home 2 Custom Unique Layout Elements
+   ========================================== */
+.card-premium {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--secondary-color);
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-speed) ease, border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+[data-theme="dark"] .card-premium {
+  background-color: var(--bg-secondary);
+}
+.card-premium:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+.card-premium-img {
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.card-premium:not(.p-0) .card-premium-img {
+  width: calc(100% + 4rem);
+  margin-top: -2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+.faq-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 1.75rem;
+  transition: all var(--transition-speed) ease;
+  height: 100%;
+}
+[data-theme="dark"] .faq-card {
+  background-color: var(--bg-secondary);
+}
+.faq-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 25px rgba(var(--primary-rgb), 0.1);
+}

@@ -31,6 +31,13 @@
   color: var(--primary-color);
 }
 
+[data-theme="dark"] .btn-custom-secondary:hover,
+[data-theme="dark"] .btn-custom-secondary:focus {
+  background-color: rgba(var(--secondary-rgb), 0.25) !important;
+  color: #FFFFFF !important;
+  border-color: var(--secondary-color) !important;
+}
+
 [data-theme="dark"] .text-dark {
   color: var(--text-primary) !important;
 }
@@ -71,3 +78,103 @@
 [data-theme="dark"] .btn-outline-secondary:hover {
   background-color: var(--border-color) !important;
 }
+
+/* Auth Cards & Forms dark theme overrides */
+[data-theme="dark"] .card-custom {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .card-custom h1,
+[data-theme="dark"] .card-custom h2,
+[data-theme="dark"] .card-custom h3,
+[data-theme="dark"] .card-custom h4,
+[data-theme="dark"] .card-custom h5,
+[data-theme="dark"] .card-custom h6 {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .card-custom label,
+[data-theme="dark"] .card-custom .form-label,
+[data-theme="dark"] .card-custom .form-check-label {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .card-custom .brand-text {
+  color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .card-custom .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .card-custom a:not(.btn):not(.btn-custom) {
+  color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .card-custom a:not(.btn):not(.btn-custom):hover {
+  color: #FBBF24 !important;
+}
+
+[data-theme="dark"] .form-check-input {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .form-check-input:checked {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* Form Select Dropdown arrow & Calendar input icon in Dark Theme */
+[data-theme="dark"] .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23F9FAFB' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
+[data-theme="dark"] input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* Service Page FAQ section dark theme styling */
+[data-theme="dark"] .faq-section {
+  background-color: #000000 !important;
+}
+
+[data-theme="dark"] .faq-section .accordion-item {
+  background-color: #000000 !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .faq-section .accordion-button {
+  background-color: #000000 !important;
+  color: var(--text-primary) !important;
+  box-shadow: none !important;
+}
+
+[data-theme="dark"] .faq-section .accordion-button:not(.collapsed) {
+  background-color: #111827 !important;
+  color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .faq-section .accordion-button::after {
+  filter: invert(1);
+}
+
+[data-theme="dark"] .faq-section .accordion-body {
+  background-color: #000000 !important;
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .subscribe-input:not(.bg-transparent) {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .subscribe-input:not(.bg-transparent)::placeholder {
+  color: var(--text-secondary) !important;
+  opacity: 0.6;
+}
+
+
+

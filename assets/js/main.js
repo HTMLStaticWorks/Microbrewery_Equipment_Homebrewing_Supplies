@@ -22,9 +22,9 @@ function initTheme() {
   const themeToggle = document.getElementById('themeToggle');
   if (!themeToggle) return;
 
-  const currentTheme = localStorage.getItem('theme') || 
-                       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  
+  const currentTheme = localStorage.getItem('theme') ||
+    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
   setTheme(currentTheme);
 
   themeToggle.addEventListener('click', () => {
@@ -37,7 +37,7 @@ function initTheme() {
 function setTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
-  
+
   const themeToggle = document.getElementById('themeToggle');
   if (themeToggle) {
     if (theme === 'dark') {
@@ -102,7 +102,7 @@ function setLayout(layout) {
 function initActiveNavLink() {
   const path = window.location.pathname;
   const page = path.split("/").pop();
-  
+
   const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
@@ -201,10 +201,11 @@ function initSkeletonLoaders() {
     const skeletonsCount = parseInt(container.getAttribute('data-skeletons')) || 3;
     let skeletonHTML = '<div class="row g-4">';
     for (let i = 0; i < skeletonsCount; i++) {
+      const colClass = (i === 2 && skeletonsCount === 3) ? 'col-md-6 mx-auto' : 'col-md-6';
       skeletonHTML += `
-        <div class="col-md-4">
+        <div class="${colClass}">
           <div class="card card-custom p-4">
-            <div class="skeleton" style="width: 100%; height: 200px;"></div>
+            <div class="skeleton" style="width: 100%; aspect-ratio: 1.5;"></div>
             <div class="card-custom-body w-100 mt-3 text-center">
               <div class="skeleton mx-auto mb-2" style="width: 60%; height: 24px;"></div>
               <div class="skeleton mx-auto mb-2" style="width: 80%; height: 16px;"></div>
@@ -218,7 +219,7 @@ function initSkeletonLoaders() {
       `;
     }
     skeletonHTML += '</div>';
-    
+
     // Store original contents
     const originalHTML = container.innerHTML;
     container.innerHTML = skeletonHTML;
@@ -336,26 +337,26 @@ function initBubbles() {
   cards.forEach(card => {
     // Skip login/register and callback form cards
     if (card.classList.contains('card') || card.querySelector('form')) return;
-    
+
     // Check if it already has a bubble-container
     if (!card.querySelector('.bubble-container')) {
       card.classList.add('bubble-card');
-      
+
       // Create bubble container
       const container = document.createElement('div');
       container.classList.add('bubble-container');
-      
+
       // Gather all current child nodes
       const children = Array.from(card.childNodes);
-      
+
       // Create content wrapper
       const wrapper = document.createElement('div');
       wrapper.style.position = 'relative';
       wrapper.style.zIndex = '2';
-      
+
       // Append children to wrapper
       children.forEach(child => wrapper.appendChild(child));
-      
+
       // Append container and wrapper to card
       card.appendChild(container);
       card.appendChild(wrapper);
@@ -373,7 +374,7 @@ function initBubbles() {
     for (let i = 0; i < bubbleCount; i++) {
       const bubble = document.createElement('div');
       bubble.classList.add('bubble-particle');
-      
+
       const size = Math.random() * 12 + 6; // 6px to 18px
       const left = Math.random() * 100; // 0% to 100%
       const delay = Math.random() * 6; // 0s to 6s
